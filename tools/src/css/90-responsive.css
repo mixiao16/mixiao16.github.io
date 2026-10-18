@@ -33,7 +33,7 @@
   .hero-kicker{grid-column:1/-1;grid-row:1;padding-left:0}
   .hero-name{grid-column:1/-1;grid-row:2;font-size:clamp(64px,22vw,150px);align-self:start;margin-top:3svh}
   .hero-stage{grid-column:1/-1;grid-row:3;height:min(54svh,520px);margin-top:-5svh}
-  .hero-seal{top:calc(var(--head-h) + 11svh);width:46px;height:46px;font-size:17px}
+  .hero-seal{top:calc(var(--head-h) + 11svh);width:48px;height:48px;--seal-stroke:8px;--seal-frame:28px}
   .hero-foot{grid-row:4;padding-left:0;padding-right:0}
   .scroll-cue i{height:30px}
 

@@ -120,7 +120,8 @@ html[data-lang="zh"] .mono{letter-spacing:.14em;font-size:12px;text-transform:no
 .chrome.is-scrolled{background:color-mix(in srgb,var(--paper) 86%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom-color:var(--line)}
 .chrome.is-hidden{transform:translateY(-100%)}
 .brand{justify-self:start;display:flex;align-items:center;gap:.8em;white-space:nowrap}
-.brand-seal{display:inline-grid;place-items:center;width:1.9em;height:1.9em;border:1px solid var(--seal);color:var(--seal);font:400 11px/1 var(--f-zh);writing-mode:vertical-rl;letter-spacing:0;padding:.2em 0;transform:rotate(-3deg)}
+.seal{display:block;flex:none;color:var(--seal);overflow:visible}
+.brand-seal{width:34px;height:34px;--seal-stroke:9px;--seal-frame:30px;transform:rotate(-2deg)}
 .where{justify-self:center;color:var(--ink-2)}
 .nav{justify-self:end;display:flex;align-items:center;gap:clamp(.9rem,2vw,2rem)}
 .nav a,.nav button{position:relative;padding:.4em 0}

@@ -48,6 +48,27 @@ BOARD_THREAD = '2,3,9,12,13,14,16,18'
 NOTE_FRAME = 12
 
 
+# --------------------------------------------------------------------------- seal
+# 「張櫻瀚印」 in small-seal script, 朱文 (red characters, red frame). Glyphs from the CNS11643
+# 全字庫說文解字 font (Taiwan, Open Government Data License); 櫻 = 木+嬰 and 瀚 = 水+翰 are composed
+# the way seal carvers do, since neither character is in the Shuowen. Path: tools/src/seal-path.txt.
+SEAL_PATH = (ROOT / 'tools' / 'src' / 'seal-path.txt').read_text().strip()
+SEAL_V = hashlib.md5(SEAL_PATH.encode()).hexdigest()[:8]
+
+
+def write_seal_svg():
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><symbol id="seal" viewBox="0 0 512 512">'
+           '<rect x="20" y="20" width="472" height="472" rx="24" fill="none" stroke="currentColor" style="stroke-width:var(--seal-frame,24px)"/>'
+           '<path d="%s" fill="currentColor" stroke="currentColor" stroke-linejoin="round" style="stroke-width:var(--seal-stroke,8px)"/>'
+           '</symbol><use href="#seal" style="color:#B23A2B"/></svg>\n') % SEAL_PATH
+    (ROOT / 'assets' / 'img' / 'ui' / 'seal.svg').write_text(svg)
+
+
+def seal_svg(rel, cls):
+    return ('<svg class="seal %s" viewBox="0 0 512 512" aria-hidden="true" focusable="false">'
+            '<use href="%sassets/img/ui/seal.svg?v=%s#seal"/></svg>') % (cls, rel, SEAL_V)
+
+
 # --------------------------------------------------------------------------- helpers
 def bi(en, zh, raw=False):
     if not raw:
@@ -171,7 +192,7 @@ def chrome(rel, current):
     return f'''<a class="skip" href="#main">{bi('Skip to content', '跳到正文')}</a>
 <span class="reg reg-tl" aria-hidden="true"><i></i></span><span class="reg reg-tr" aria-hidden="true"><i></i></span><span class="reg reg-bl" aria-hidden="true"><i></i></span><span class="reg reg-br" aria-hidden="true"><i></i></span>
 <header class="chrome mono">
-  <a class="brand" href="{home}" aria-label="Yinghan Zhang, home"><span class="brand-seal" aria-hidden="true">{SITE['seal']}</span>{bi(SITE['name'], SITE['name_zh'])}</a>
+  <a class="brand" href="{home}" aria-label="Yinghan Zhang, home">{seal_svg(rel, 'brand-seal')}{bi(SITE['name'], SITE['name_zh'])}</a>
   <span class="where">{bi('Seattle', '西雅图')} · <span data-clock>--:--</span></span>
   <nav class="nav" id="nav" aria-label="Main">
     {links}
@@ -228,7 +249,7 @@ def home_page():
     <canvas id="rub" data-mask="assets/img/ui/stone-mask.png" aria-hidden="true"></canvas>
     <span class="hero-done mono">{bi('The stone, revealed.', '石形已现。')}</span>
   </div>
-  <div class="hero-seal" aria-hidden="true">{SITE['seal']}</div>
+  {seal_svg('', 'hero-seal')}
   <div class="hero-foot">
     <div class="hero-hint mono">
       <span>{bi('Rub the paper to reveal the stone.', '轻拂纸面,拓出石形。')}</span>
@@ -323,7 +344,7 @@ def home_page():
     ld = {'@context': 'https://schema.org', '@type': 'Person', 'name': SITE['name'], 'alternateName': SITE['name_zh'],
           'url': DOMAIN + '/', 'jobTitle': 'Stone artist and printmaker', 'sameAs': [SITE['instagram']],
           'homeLocation': {'@type': 'Place', 'name': 'Seattle, WA'}}
-    intro = f'<div class="intro" aria-hidden="true"><div class="intro-seal">{SITE["seal"]}</div><div class="intro-name">{SITE["name"]}</div></div>'
+    intro = f'<div class="intro" aria-hidden="true">{seal_svg('', 'intro-seal')}<div class="intro-name">{SITE["name"]}</div></div>'
     body = '\n'.join([hero, works, quote, feature])
     return page(rel, title_en='Yinghan Zhang — Stone Artist. Printmaker', title_zh='张樱瀚 — 石头艺术家 · 版画家', desc=DESC_EN,
                 path='', og=og_for(), body=body, is_home=True, ld=ld, extra_body=intro)
@@ -614,6 +635,7 @@ ASSET_V = ''
 def main():
     global ASSET_V
     ASSET_V = build_assets()
+    write_seal_svg()
     write('index.html', home_page())
     for n in range(N):
         write('works/%s/index.html' % WORKS[n]['slug'], work_page(n))
