@@ -1,0 +1,609 @@
+{
+ "site": {
+  "name": "Yinghan Zhang",
+  "name_zh": "张樱瀚",
+  "seal": "樱瀚",
+  "tagline": "Stone Artist. Printmaker",
+  "tagline_zh": "石头艺术家 · 版画家",
+  "instagram": "https://www.instagram.com/mixiaoloartt/",
+  "email": "",
+  "city": "Seattle",
+  "tz": "America/Los_Angeles",
+  "domain": "https://yinghanart.com"
+ },
+ "works": [
+  {
+   "slug": "silent-veins",
+   "title": "Silent Veins",
+   "title_zh": "静观",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Silent Veins 静观/Zhang_Yinghan_09.jpg",
+     "alt": "Installation view: large stone-rubbing forms on folding screens, with a small video monitor",
+     "alt_zh": "装置现场:折屏上的巨幅石形拓印,中间嵌有一台小型视频屏幕",
+     "role": "plate"
+    },
+    {
+     "src": "Silent Veins 静观/DSC_5212.jpg",
+     "alt": "Installation view: folding screens of stone rubbings in a dark room corner",
+     "alt_zh": "装置现场:暗室一角的石拓折屏",
+     "role": "plate"
+    },
+    {
+     "src": "Silent Veins 静观/DSC_5211.jpg",
+     "alt": "Installation view: a standing folding screen printed with rubbed stone texture",
+     "alt_zh": "装置现场:立式折屏上的石纹拓印",
+     "role": "plate"
+    },
+    {
+     "src": "Silent Veins 静观/Zhang_Yinghan_08.jpg",
+     "alt": "Detail of the folding screens, tall view",
+     "alt_zh": "折屏局部(竖幅)",
+     "role": "plate"
+    },
+    {
+     "src": "Silent Veins 静观/Zhang_Yinghan_05.jpg",
+     "alt": "A dark stone resting on an open, book-like form on a plinth",
+     "alt_zh": "一块黑石置于基座上的“翻开的书”形装置之上",
+     "role": "plate"
+    }
+   ],
+   "process": [
+    {
+     "src": "Silent Veins 静观/image.png",
+     "alt": "Hands lifting a freshly taken rubbing from a stone outdoors",
+     "alt_zh": "在户外从石上揭起新拓的双手",
+     "role": "process",
+     "caption": "Lifting the rubbing",
+     "caption_zh": "揭拓"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02884.JPG",
+     "alt": "A cord, a cloth",
+     "alt_zh": "绳与布",
+     "role": "process",
+     "caption": "A cord, a cloth",
+     "caption_zh": "绳与布"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02885.JPG",
+     "alt": "Lifting",
+     "alt_zh": "提起",
+     "role": "process",
+     "caption": "Lifting",
+     "caption_zh": "提起"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02886.JPG",
+     "alt": "Set down",
+     "alt_zh": "放下",
+     "role": "process",
+     "caption": "Set down",
+     "caption_zh": "放下"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02887.JPG",
+     "alt": "The table",
+     "alt_zh": "案",
+     "role": "process",
+     "caption": "The table",
+     "caption_zh": "案"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02888.JPG",
+     "alt": "The table, aside",
+     "alt_zh": "案,侧观",
+     "role": "process",
+     "caption": "The table, aside",
+     "caption_zh": "案,侧观"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02889.JPG",
+     "alt": "Brush and pad",
+     "alt_zh": "刷与包",
+     "role": "process",
+     "caption": "Brush and pad",
+     "caption_zh": "刷与包"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02890.JPG",
+     "alt": "Brush and pad, turned",
+     "alt_zh": "刷与包·转角",
+     "role": "process",
+     "caption": "Brush and pad, turned",
+     "caption_zh": "刷与包·转角"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02891.JPG",
+     "alt": "Inkstone, dry",
+     "alt_zh": "干砚",
+     "role": "process",
+     "caption": "Inkstone, dry",
+     "caption_zh": "干砚"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02892.JPG",
+     "alt": "Water",
+     "alt_zh": "注水",
+     "role": "process",
+     "caption": "Water",
+     "caption_zh": "注水"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02893.JPG",
+     "alt": "Ink gathers",
+     "alt_zh": "墨聚",
+     "role": "process",
+     "caption": "Ink gathers",
+     "caption_zh": "墨聚"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02894.JPG",
+     "alt": "A branch appears",
+     "alt_zh": "枝影初现",
+     "role": "process",
+     "caption": "A branch appears",
+     "caption_zh": "枝影初现"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02895.JPG",
+     "alt": "Reflection",
+     "alt_zh": "倒影",
+     "role": "process",
+     "caption": "Reflection",
+     "caption_zh": "倒影"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02896.JPG",
+     "alt": "Reflection, softer",
+     "alt_zh": "倒影·渐虚",
+     "role": "process",
+     "caption": "Reflection, softer",
+     "caption_zh": "倒影·渐虚"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02897.JPG",
+     "alt": "Reflection, softer still",
+     "alt_zh": "倒影·更虚",
+     "role": "process",
+     "caption": "Reflection, softer still",
+     "caption_zh": "倒影·更虚"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02898.JPG",
+     "alt": "Surface of ink",
+     "alt_zh": "墨面",
+     "role": "process",
+     "caption": "Surface of ink",
+     "caption_zh": "墨面"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02899.JPG",
+     "alt": "Branches, blurred",
+     "alt_zh": "枝影·虚",
+     "role": "process",
+     "caption": "Branches, blurred",
+     "caption_zh": "枝影·虚"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02900.JPG",
+     "alt": "Close view",
+     "alt_zh": "近观",
+     "role": "process",
+     "caption": "Close view",
+     "caption_zh": "近观"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02901.JPG",
+     "alt": "Close view",
+     "alt_zh": "近观",
+     "role": "process",
+     "caption": "Close view",
+     "caption_zh": "近观"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02902.JPG",
+     "alt": "Close view",
+     "alt_zh": "近观",
+     "role": "process",
+     "caption": "Close view",
+     "caption_zh": "近观"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02903.JPG",
+     "alt": "Close view",
+     "alt_zh": "近观",
+     "role": "process",
+     "caption": "Close view",
+     "caption_zh": "近观"
+    },
+    {
+     "src": "Silent Veins 静观/DSC02904.JPG",
+     "alt": "Close view",
+     "alt_zh": "近观",
+     "role": "process",
+     "caption": "Close view",
+     "caption_zh": "近观"
+    }
+   ],
+   "video": {
+    "youtube": "jdiPZLdzP4w",
+    "title": "Gesture of Time",
+    "title_zh": "时间的姿态"
+   }
+  },
+  {
+   "slug": "scholar-stone",
+   "title": "Scholar Stone",
+   "title_zh": "文人石",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Scholar Stone/1.jpg",
+     "alt": "Scholar Stone: a full-shape rubbing of a scholar’s rock on pale paper",
+     "alt_zh": "文人石:淡色纸上的一块供石全形拓",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "Scholar Stone/Image_20240910102821.jpg",
+     "alt": "The rubbing laid out on the table among tools",
+     "alt_zh": "工作台上的拓印与工具",
+     "role": "plate"
+    }
+   ]
+  },
+  {
+   "slug": "heart-of-stone",
+   "title": "Heart of Stone",
+   "title_zh": "石心",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Heart of Stone/Zhang_Yinghan_01.jpg",
+     "alt": "Heart of Stone: a rubbing in the shape of an anatomical heart",
+     "alt_zh": "石心:心脏形态的拓印",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "Heart of Stone/IMG_6414.jpg",
+     "alt": "Installed beside its silver counterpart, Hug",
+     "alt_zh": "与银色的《拥抱》并置展出",
+     "role": "plate"
+    }
+   ]
+  },
+  {
+   "slug": "hug",
+   "title": "Hug",
+   "title_zh": "拥抱",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Hug/Zhang_Yinghan_02.jpg",
+     "alt": "Hug: a large silvered paper form enclosing a dark rubbing",
+     "alt_zh": "拥抱:银色纸形环抱着深色拓印",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "Heart of Stone/IMG_6414.jpg",
+     "alt": "Hug installed on the wall next to Heart of Stone",
+     "alt_zh": "《拥抱》与《石心》并排挂展",
+     "role": "plate"
+    }
+   ]
+  },
+  {
+   "slug": "portrait",
+   "title": "Portrait",
+   "title_zh": "肖像",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Portrait/Zhang_Yinghan_03.jpg",
+     "alt": "Portrait: four printed bust portraits whose faces are overlaid with rubbed stone texture",
+     "alt_zh": "肖像:四幅半身肖像,面部覆以石纹拓印",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "Portrait/IMG_6202.jpg",
+     "alt": "Portrait, single sheet",
+     "alt_zh": "肖像(单幅)",
+     "role": "plate",
+     "zoom": true
+    }
+   ]
+  },
+  {
+   "slug": "spirit-of-stone",
+   "title": "Spirit of Stone",
+   "title_zh": "石魂",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Spirit of Stone/IMG_8889.jpg",
+     "alt": "A tall red column of cut and printed forms hanging in a historic gallery",
+     "alt_zh": "悬挂在历史展厅中的红色高柱状装置",
+     "role": "plate"
+    },
+    {
+     "src": "Spirit of Stone/IMG_8890.jpg",
+     "alt": "Close view of the red column and its reflection on a clear surface",
+     "alt_zh": "红色柱体及其在透明面上的倒影",
+     "role": "plate"
+    },
+    {
+     "src": "Spirit of Stone/IMG_8862.jpg",
+     "alt": "The installation seen through the gallery doorway at night",
+     "alt_zh": "夜间透过展厅门洞看见的装置",
+     "role": "plate"
+    }
+   ]
+  },
+  {
+   "slug": "the-welcoming-stone",
+   "title": "The Welcoming Stone",
+   "title_zh": "迎客石",
+   "cover": 0,
+   "images": [
+    {
+     "src": "The Welcoming Stone/IMG_5165.jpg",
+     "alt": "The Welcoming Stone: tall gestural black ink printed form with teal and pink accents",
+     "alt_zh": "迎客石:带青绿与粉色点缀的墨色长幅",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "The Welcoming Stone/IMG_5166.jpg",
+     "alt": "The Welcoming Stone, second state",
+     "alt_zh": "迎客石(另一版本)",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "The Welcoming Stone/X.jpg",
+     "alt": "The Welcoming Stone, third state",
+     "alt_zh": "迎客石(又一版本)",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "The Welcoming Stone/Image_20240910120408.jpg",
+     "alt": "The Welcoming Stone, black-and-teal state",
+     "alt_zh": "迎客石(黑青版本)",
+     "role": "plate",
+     "zoom": true
+    }
+   ]
+  },
+  {
+   "slug": "within-the-stone-i",
+   "title": "Within the Stone I",
+   "title_zh": "石中 · 其一",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Within the Stone I/IMG_3899.jpg",
+     "alt": "A figure wearing a printed garment, lit by projected light in a window-lined room",
+     "alt_zh": "身着印花服饰的人物,立于被投影光照亮的窗边",
+     "role": "plate"
+    },
+    {
+     "src": "Within the Stone I/Spirit of Stone.png",
+     "alt": "A quilted garment printed in teal, shown on a hanger",
+     "alt_zh": "悬挂展示的青绿印花绗缝外衣",
+     "role": "plate"
+    }
+   ]
+  },
+  {
+   "slug": "within-the-stone-ii",
+   "title": "Within the Stone II",
+   "title_zh": "石中 · 其二",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Within the Stone II/Zhang_Yinghan_06.jpg",
+     "alt": "A paper garment on a mannequin before large ink prints",
+     "alt_zh": "人台上的纸质服饰,身后是巨幅墨色版画",
+     "role": "plate"
+    },
+    {
+     "src": "Within the Stone II/IMG_5810.jpg",
+     "alt": "Tall ink-printed panels standing in a sunlit window",
+     "alt_zh": "立于日光窗前的墨色长幅",
+     "role": "plate"
+    },
+    {
+     "src": "Within the Stone II/347F53C7-780B-4556-A969-F6299F5210ED.jpg",
+     "alt": "Detail of a worn paper garment",
+     "alt_zh": "纸质服饰局部(穿着)",
+     "role": "plate"
+    }
+   ]
+  },
+  {
+   "slug": "shape-of-stone",
+   "title": "Shape of Stone",
+   "title_zh": "石之形",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Shape of Stone/Zhang_Yinghan_04.jpg",
+     "alt": "Shape of Stone: a repeated grid of printed stone forms, framed",
+     "alt_zh": "石之形:石形重复排列的版画,装裱展出",
+     "role": "plate",
+     "zoom": true
+    }
+   ],
+   "local_video": {
+    "src": "shape-of-stone.mp4",
+    "poster": "shape-of-stone-poster.webp",
+    "caption": "Shape of Stone, video",
+    "caption_zh": "《石之形》影像"
+   }
+  },
+  {
+   "slug": "the-peach",
+   "title": "The Peach",
+   "title_zh": "桃",
+   "cover": 0,
+   "images": [
+    {
+     "src": "The Peach/8.jpg",
+     "alt": "The Peach: green and yellow printed ground surrounding a central stone form",
+     "alt_zh": "桃:青绿与鹅黄的版面环绕中央的石形",
+     "role": "plate",
+     "zoom": true
+    }
+   ]
+  },
+  {
+   "slug": "trap",
+   "title": "Trap",
+   "title_zh": "陷阱",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Trap/IMG_2839.jpg",
+     "alt": "Trap: two framed panels of cellular, web-like line work",
+     "alt_zh": "陷阱:两幅装框的网状细胞纹样",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "Trap/IMG_2828.jpg",
+     "alt": "Trap, angled view of the panels",
+     "alt_zh": "陷阱:斜视",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "Trap/IMG_2814.jpg",
+     "alt": "Trap, close angled view",
+     "alt_zh": "陷阱:近斜视",
+     "role": "plate",
+     "zoom": true
+    },
+    {
+     "src": "Trap/IMG_2808.jpg",
+     "alt": "Trap, detail of the line work",
+     "alt_zh": "陷阱:细节",
+     "role": "plate",
+     "zoom": true
+    }
+   ]
+  },
+  {
+   "slug": "for-you-i-pin-myself-away-with-no-regret",
+   "title": "For you I pin myself away with no regret",
+   "title_zh": "为你憔悴,终不悔",
+   "cover": 0,
+   "year": "2022",
+   "medium": "Risograph and screen print, mixed-media artbook",
+   "medium_zh": "孔版印刷与丝网印刷,综合材料艺术家书",
+   "size": "11 × 17 in",
+   "size_zh": "11 × 17 英寸",
+   "images": [
+    {
+     "src": "For you I pin myself away with no regret/IMG_2970.JPG",
+     "alt": "The accordion artbook fully extended, green padded covers at each end",
+     "alt_zh": "完全展开的手风琴折页艺术家书,两端为绿色软包封面",
+     "role": "plate"
+    },
+    {
+     "src": "For you I pin myself away with no regret/IMG_2995.JPG",
+     "alt": "The artbook closed: a green padded cover with stitched openings",
+     "alt_zh": "合上的艺术家书:绿色软包封面与缝线镂空",
+     "role": "plate"
+    },
+    {
+     "src": "For you I pin myself away with no regret/IMG_2996.JPG",
+     "alt": "Side view of the closed artbook",
+     "alt_zh": "合上时的侧面",
+     "role": "plate"
+    },
+    {
+     "src": "For you I pin myself away with no regret/IMG_2999.JPG",
+     "alt": "Folded pages with black brushed characters and green marks",
+     "alt_zh": "折页:墨色笔迹与绿色斑点",
+     "role": "plate"
+    },
+    {
+     "src": "For you I pin myself away with no regret/IMG_3001 (1).JPG",
+     "alt": "Folded pages with overprinted text, ink and green marks",
+     "alt_zh": "折页:叠印文字、墨迹与绿色斑点",
+     "role": "plate"
+    },
+    {
+     "src": "For you I pin myself away with no regret/IMG_2101.JPG",
+     "alt": "Close view of the accordion folds and the green cover",
+     "alt_zh": "折页与绿色封面的近观",
+     "role": "plate"
+    }
+   ]
+  },
+  {
+   "slug": "needy",
+   "title": "Needy",
+   "title_zh": "渴求",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Needy/IMG_8943.jpg",
+     "alt": "Needy: a framed multi-colour relief print of a figure with moths on the skin",
+     "alt_zh": "渴求:装裱的多色凸版版画,人物肌肤上栖着飞蛾",
+     "role": "plate",
+     "zoom": true
+    }
+   ]
+  },
+  {
+   "slug": "once-in-a-life-time",
+   "title": "Once in a life time",
+   "title_zh": "一生一次",
+   "cover": 0,
+   "images": [
+    {
+     "src": "Once in a life time/Zhang_Yinghan_10.jpg",
+     "alt": "Once in a life time: a framed black-and-white relief print of a figure wreathed in flame",
+     "alt_zh": "一生一次:装裱的黑白凸版版画,人物被火焰环绕",
+     "role": "plate",
+     "zoom": true
+    }
+   ]
+  },
+  {
+   "slug": "for-her",
+   "title": "For her",
+   "title_zh": "给她",
+   "cover": 0,
+   "images": [
+    {
+     "src": "For her/for-her.png",
+     "alt": "For her: nine flat-colour illustrations of figures on red and white grounds",
+     "alt_zh": "给她:红与白底上的九幅平涂人物插画",
+     "role": "plate"
+    }
+   ]
+  }
+ ],
+ "extras": {
+  "about": {
+   "src": "my_profile_pic.jpg",
+   "alt": "Yinghan at the press, lifting a fresh rubbing from a dark stone",
+   "alt_zh": "樱瀚在版画工作室里,从黑石上揭起新拓的拓片",
+   "role": "plate"
+  },
+  "contact": {
+   "src": "Yinhan 樱瀚/IMG_5151.jpg",
+   "alt": "A grid of printed sheets: repeated black blossom shapes over grey washes",
+   "alt_zh": "版画纸张拼成的方阵:灰色晕染之上重复出现的黑色花形",
+   "role": "plate"
+  }
+ }
+}

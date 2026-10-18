@@ -1,0 +1,40 @@
+/* =========================================================
+   Small additions that tie markup to the rest
+   ========================================================= */
+.ph{display:block}
+.fig-frame .ph{display:block}
+.nav .tools{display:flex;align-items:center;gap:clamp(.9rem,2vw,2rem)}
+.th-ink,.th-paper{display:inline}
+html[data-theme="ink"] .th-ink,html:not([data-theme="ink"]) .th-paper{display:none}
+.nav .tg[aria-pressed="true"]{color:var(--ink)}
+[hidden]{display:none!important}
+
+/* italic CJK looks synthetic — keep it upright in Chinese mode */
+html[data-lang="zh"] :is(.sec-title,.foot-mark,.contact h1,.nf h1,.quote-en,.work-nav .t,.plate-title) em{font-style:normal}
+html[data-lang="zh"] .nf h1{font-family:var(--f-zh);letter-spacing:.06em}
+html[data-lang="zh"] .sec-title{font-family:var(--f-zh);font-weight:300;letter-spacing:.04em;line-height:1.1}
+html[data-lang="zh"] .foot-mark{font-family:var(--f-zh);letter-spacing:.02em}
+html[data-lang="zh"] .hero-name{font-family:var(--f-zh);font-weight:300;letter-spacing:0}
+
+/* cursor label text (set by data-kind) */
+.cursor-label[data-kind="view"]::before{content:"View"}
+.cursor-label[data-kind="drag"]::before{content:"Drag"}
+html[data-lang="zh"] .cursor-label[data-kind="view"]::before{content:"查看"}
+html[data-lang="zh"] .cursor-label[data-kind="drag"]::before{content:"拖动"}
+.cursor-label{letter-spacing:.1em}
+
+/* work page small bits */
+.work-no .fig-count{margin-left:auto}
+.fig figcaption.mono{font-size:11px}
+.frame button{cursor:zoom-in}
+.frame figcaption{font-family:var(--f-serif)}
+html[data-lang="zh"] .frame figcaption{font-family:var(--f-zh)}
+.board-index ol{display:flex;flex-direction:column}
+.video-frame[data-yt] .yt-poster{cursor:pointer}
+
+/* foot */
+.foot-col.mono a,.foot-col.mono span{font-size:11.5px}
+html[data-lang="zh"] .foot-col.mono{font-size:12.5px}
+
+/* print / sr */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
