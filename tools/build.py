@@ -38,7 +38,7 @@ BIO_ZH = [
     "全形拓是这套创作实践的重要一环。这门古老的技艺,张樱瀚曾在山东师从一位传统匠人。它让人得以与石头的肌理深度对话,将石之质地如实留存——既映照时间,也呼应赏石时的静观之意。通过把拓印与版画、木刻、绘画和拼贴结合起来,张樱瀚把石头化作静观的山水,显露其隐藏的本质。",
     "张樱瀚的作品邀请观者思考时间、精神性与万物相连。受道家“石为最小之山”这一观念的启发,其艺术鼓励人们去深究最微小的细节,让古老的传统与当代的手法相互交融。通过版画与综合媒介作品,艺术家为我们打开看待世界与人类经验的新视角。",
 ]
-DESC_EN = ("Portfolio of Yinghan Zhang, a Seattle-based stone artist and printmaker working with full-shape rubbing, "
+DESC_EN = ("Portfolio of Yinghan Zhang, a stone artist and printmaker working with full-shape rubbing, "
            "printmaking, woodcut, drawing and collage.")
 
 # Silent Veins process: frames on the home page teaser and the work-page board
@@ -192,7 +192,7 @@ def chrome(rel, current):
 <span class="reg reg-tl" aria-hidden="true"><i></i></span><span class="reg reg-tr" aria-hidden="true"><i></i></span><span class="reg reg-bl" aria-hidden="true"><i></i></span><span class="reg reg-br" aria-hidden="true"><i></i></span>
 <header class="chrome mono">
   <a class="brand" href="{home}" aria-label="Yinghan Zhang, home">{seal_svg(rel, 'brand-seal')}{bi(SITE['name'], SITE['name_zh'])}</a>
-  <span class="where">{bi('Seattle', '西雅图')} · <span data-clock>--:--</span></span>
+  <span class="where" aria-hidden="true"></span>
   <nav class="nav" id="nav" aria-label="Main">
     {links}
     <span class="sep" aria-hidden="true"></span>
@@ -214,7 +214,7 @@ def footer(rel):
         mail = '<a href="mailto:%s">%s</a>' % (a(SITE['email']), esc(SITE['email']))
     return f'''<footer class="foot">
   <div class="foot-mark" aria-hidden="true"><span class="en">Yinghan <em>Zhang</em></span><span class="zh" lang="zh-Hans">张<em>樱瀚</em></span></div>
-  <div class="foot-col mono"><span class="dim">{bi('Based in', '工作地')}</span><span>{bi('Seattle, WA', '美国 · 西雅图')}</span><span class="dim" data-clock>--:--</span></div>
+  <div class="foot-col mono"><span>{bi(SITE['tagline'], SITE['tagline_zh'])}</span></div>
   <div class="foot-col c mono"><a href="{home}#works">{bi('Work', '作品')}</a><a href="{rel}about/">{bi('About', '关于')}</a><a href="{rel}contact/">{bi('Contact', '联系')}</a></div>
   <div class="foot-col r mono"><a href="{a(ig)}" target="_blank" rel="noopener">Instagram {esc(handle)} ↗</a>{mail}<span class="dim">© {YEAR} {bi(SITE['name'], SITE['name_zh'])}</span></div>
 </footer>'''
@@ -241,7 +241,7 @@ def home_page():
     rel = ''
     # --- hero
     hero = f'''<section class="hero" id="top" aria-label="Introduction">
-  <p class="hero-kicker mono"><span>{bi(SITE['tagline'], SITE['tagline_zh'])}</span><span class="dim">{bi('Seattle, WA', '美国 · 西雅图')}</span></p>
+  <p class="hero-kicker mono"><span>{bi(SITE['tagline'], SITE['tagline_zh'])}</span></p>
   <h1 class="hero-name" aria-label="{a(SITE['name'])}"><span><span class="en">Yinghan</span><span class="zh" lang="zh-Hans">张</span></span><span><span class="en">Zhang</span><span class="zh" lang="zh-Hans">樱瀚</span></span></h1>
   <div class="hero-stage" id="stage">
     <img class="hero-stone" src="assets/img/ui/stone-1500.webp" srcset="assets/img/ui/stone-760.webp 760w, assets/img/ui/stone-1500.webp 1500w" sizes="(max-width:900px) 70vw, 36vw" width="1001" height="1500" alt="A full-shape rubbing of a scholar’s stone" data-alt-en="A full-shape rubbing of a scholar’s stone" data-alt-zh="一块文人石的全形拓" fetchpriority="high" draggable="false">
@@ -342,7 +342,7 @@ def home_page():
 
     ld = {'@context': 'https://schema.org', '@type': 'Person', 'name': SITE['name'], 'alternateName': SITE['name_zh'],
           'url': DOMAIN + '/', 'jobTitle': 'Stone artist and printmaker', 'sameAs': [SITE['instagram']],
-          'homeLocation': {'@type': 'Place', 'name': 'Seattle, WA'}}
+          }
     intro = f'<div class="intro" aria-hidden="true">{seal_svg('', 'intro-seal')}<div class="intro-name">{SITE["name"]}</div></div>'
     body = '\n'.join([hero, works, quote, feature])
     return page(rel, title_en='Yinghan Zhang — Stone Artist. Printmaker', title_zh='张樱瀚 — 石头艺术家 · 版画家', desc=DESC_EN,
@@ -485,12 +485,12 @@ def work_page(idx):
   {nav_html}
 </article>'''
     c = cover(w)
-    desc = '%s — a work by Yinghan Zhang, stone artist and printmaker in Seattle.' % w['title']
+    desc = '%s — a work by Yinghan Zhang, stone artist and printmaker.' % w['title']
     if w.get('text'):
         first = w['text'][0]['en']
         desc = first if len(first) <= 158 else first[:155].rsplit(' ', 1)[0].rstrip(',;:—') + '…'
     elif w.get('medium'):
-        desc = '%s (%s%s) — a work by Yinghan Zhang, stone artist and printmaker in Seattle.' % (
+        desc = '%s (%s%s) — a work by Yinghan Zhang, stone artist and printmaker.' % (
             w['title'], (str(w['year']) + ', ') if w.get('year') else '', w['medium'])
     ld = {'@context': 'https://schema.org', '@type': 'VisualArtwork', 'name': w['title'], 'alternateName': w['title_zh'],
           'creator': {'@type': 'Person', 'name': SITE['name']}, 'url': '%s/works/%s/' % (DOMAIN, w['slug']),
@@ -576,7 +576,7 @@ def contact_page():
   </figure>
 </section>'''
     return page(rel, title_en='Contact — Yinghan Zhang', title_zh='联系 — 张樱瀚',
-                desc='Contact Yinghan Zhang, stone artist and printmaker in Seattle.', path='contact/', og=og_for(), body=body, current='contact')
+                desc='Contact Yinghan Zhang, stone artist and printmaker.', path='contact/', og=og_for(), body=body, current='contact')
 
 
 # --------------------------------------------------------------------------- 404 + redirects

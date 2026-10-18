@@ -7,7 +7,6 @@
     "tagline_zh": "石头艺术家 · 版画家",
     "instagram": "https://www.instagram.com/mixiaoloartt/",
     "email": "mixiaoelle@gmail.com",
-    "city": "Seattle",
     "tz": "America/Los_Angeles",
     "domain": "https://yinghanart.com"
   },
@@ -856,13 +855,13 @@
     {
       "slug": "for-her",
       "title": "For her",
-      "title_zh": "给她",
+      "title_zh": "关于她",
       "cover": 0,
       "images": [
         {
           "src": "For her/for-her.png",
           "alt": "For her: nine flat-colour illustrations of figures on red and white grounds",
-          "alt_zh": "给她:红与白底上的九幅平涂人物插画",
+          "alt_zh": "关于她:红与白底上的九幅平涂人物插画",
           "role": "plate"
         }
       ],

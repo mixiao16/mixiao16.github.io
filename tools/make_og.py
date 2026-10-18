@@ -13,7 +13,7 @@ from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
-PAPER, INK, MUTE, SEAL = (239, 234, 224), (30, 29, 25), (151, 126, 104), (178, 58, 43)
+PAPER, INK, MUTE, SEAL = (244, 244, 242), (20, 20, 20), (120, 120, 120), (200, 40, 28)
 W, H = 1200, 630
 CACHE = ROOT / 'tools/.fontcache'
 
@@ -47,11 +47,15 @@ def grain(img):
     return img
 
 
-def seal(d, x, y, s=64):
-    d.rectangle([x, y, x + s, y + s], outline=SEAL, width=3)
-    f = ImageFont.truetype(ZH, int(s * .42))
-    d.text((x + s / 2, y + s * .27), '樱', font=f, fill=SEAL, anchor='mm')
-    d.text((x + s / 2, y + s * .73), '瀚', font=f, fill=SEAL, anchor='mm')
+def seal(base, x, y, s=64):
+    """Paste the site seal 「張櫻瀚印」 (tools/src/seal-path.txt), rendered with cairosvg."""
+    import cairosvg
+    path = (ROOT / 'tools/src/seal-path.txt').read_text().strip()
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="%d" height="%d">'
+           '<rect x="20" y="20" width="472" height="472" rx="24" fill="none" stroke="#C8281C" stroke-width="28"/>'
+           '<path d="%s" fill="#C8281C" stroke="#C8281C" stroke-width="10" stroke-linejoin="round"/></svg>') % (s * 2, s * 2, path)
+    im = Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode()))).convert('RGBA').resize((s, s), Image.LANCZOS)
+    base.paste(im, (x, y), im)
 
 
 def wrap(d, text, font, maxw):
@@ -69,7 +73,7 @@ def wrap(d, text, font, maxw):
 
 def shadowed(base, im, xy):
     sh = Image.new('RGBA', (im.width + 80, im.height + 80), (0, 0, 0, 0))
-    ImageDraw.Draw(sh).rectangle([40, 52, 40 + im.width, 52 + im.height], fill=(45, 31, 22, 70))
+    ImageDraw.Draw(sh).rectangle([40, 52, 40 + im.width, 52 + im.height], fill=(0, 0, 0, 60))
     sh = sh.filter(ImageFilter.GaussianBlur(16))
     base.paste(sh, (xy[0] - 40, xy[1] - 40), sh)
     base.paste(im, xy)
@@ -96,8 +100,8 @@ def make(title, zh, img_path, out, home=False):
         art.thumbnail((box_w, box_h))
         x, y = 1200 - 70 - art.width, (H - art.height) // 2
         shadowed(base, art, (x, y))
+    seal(base, 70, 64, 56)
     d = ImageDraw.Draw(base)
-    seal(d, 70, 64, 56)
     d.text((140, 92), 'YINGHAN ZHANG', font=ImageFont.truetype(MONO, 20), fill=INK, anchor='lm')
     if home:
         f1 = ImageFont.truetype(SERIF, 150)
@@ -118,7 +122,7 @@ def make(title, zh, img_path, out, home=False):
             d.text((70, y0), ln, font=font, fill=INK, anchor='ls')
             y0 += int(size * 1.02)
         d.text((72, y0 + 26), zh, font=ImageFont.truetype(ZH, 30), fill=MUTE, anchor='ls')
-        d.text((72, 572), 'STONE ARTIST. PRINTMAKER · SEATTLE', font=ImageFont.truetype(MONO, 17), fill=MUTE, anchor='ls')
+        d.text((72, 572), 'STONE ARTIST. PRINTMAKER', font=ImageFont.truetype(MONO, 17), fill=MUTE, anchor='ls')
     Path(out).parent.mkdir(parents=True, exist_ok=True)
     base.save(out, 'JPEG', quality=86, optimize=True, progressive=True)
 
