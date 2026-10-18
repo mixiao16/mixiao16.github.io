@@ -15,7 +15,26 @@ html[data-lang="zh"] .work-alt{font-style:italic;font-family:var(--f-serif);lett
 .work-meta{display:grid;grid-template-columns:auto 1fr;gap:.55rem 1.4rem;color:var(--ink-2);padding-top:1.4rem;border-top:1px solid var(--line)}
 .work-meta dt{color:var(--ink-3)}
 .work-meta dd{color:var(--ink)}
-.work-desc{max-width:34ch;color:var(--ink-2);font-size:.95em}
+.work-info.has-text{position:static}
+.work-desc{max-width:46ch;color:var(--ink-2);font:400 17.5px/1.65 var(--f-serif);display:flex;flex-direction:column;gap:1em}
+html[data-lang="zh"] .work-desc{font-family:var(--f-zh);font-size:15px;line-height:1.95;letter-spacing:.02em}
+.essay{grid-column:6/span 6;max-width:68ch;margin:0 0 14vh;padding-top:6vh;border-top:1px solid var(--line);color:var(--ink-2);font:400 19px/1.7 var(--f-serif)}
+html[data-lang="zh"] .essay{font-family:var(--f-zh);font-size:15.5px;line-height:2;letter-spacing:.02em}
+.essay p+p,.essay details p,.essay .essay-credit{margin-top:1.15em}
+.essay-title{font:300 clamp(26px,2.6vw,40px)/1.15 var(--f-serif);color:var(--ink);letter-spacing:-.01em;margin-bottom:1.4em}
+html[data-lang="zh"] .essay-title{font-family:var(--f-zh);letter-spacing:.06em}
+.essay .poem{font-style:italic;color:var(--ink)}
+.essay .poem .cjk{font-style:normal;font-family:var(--f-zh)}
+.work-desc.is-clamped{max-height:12.5em;overflow:hidden;-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
+.desc-more{align-self:flex-start;margin-top:-.8rem;color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:3px}
+html[data-lang="zh"] .essay .poem{font-style:normal}
+.essay-more{margin-top:1.4em}
+.essay-more summary{cursor:pointer;display:inline-block;color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:3px;list-style:none;transition:color .3s,border-color .3s}
+.essay-more summary::-webkit-details-marker{display:none}
+.essay-more summary::after{content:" ↓"}
+.essay-more[open] summary::after{content:" ↑"}
+.essay-more summary:hover{color:var(--seal);border-color:var(--seal)}
+.essay-credit{color:var(--ink-3)}
 .work-links{display:flex;flex-direction:column;gap:.7rem;align-items:flex-start}
 .work-links a{border-bottom:1px solid var(--line);padding-bottom:3px;transition:color .3s,border-color .3s}
 .work-links a:hover{color:var(--seal);border-color:var(--seal)}

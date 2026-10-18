@@ -66,6 +66,7 @@
   .work-main{display:block}
   .work-info{position:static;margin-bottom:5vh;gap:1.4rem;padding-bottom:0}
   .work-figs{gap:7vh;padding-bottom:8vh}
+  .essay{grid-column:1/-1;margin-bottom:9vh;font-size:16px}
   .fig,.fig:nth-child(even){align-items:stretch}
   .fig-frame,.fig figcaption{width:100%}
   .video-frame,.video-cap{grid-column:1/-1}

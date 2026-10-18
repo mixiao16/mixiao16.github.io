@@ -286,8 +286,7 @@ def home_page():
     </ol>
   </div>
 </section>
-<div class="peek" aria-hidden="true"><span class="ph"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></span></div>
-<div class="cursor-label mono" data-kind="drag" aria-hidden="true"></div>'''
+<div class="peek" aria-hidden="true"><span class="ph"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></span></div>'''
 
     # --- quote
     quote = f'''<section class="quote" aria-label="Quote">
@@ -331,6 +330,34 @@ def home_page():
 
 
 # --------------------------------------------------------------------------- work pages
+def essay_para(p):
+    if p.get('poem'):
+        cjk = lambda l: re.search('[\u4e00-\u9fff]', l)
+        lines = lambda ls: '<br>'.join(('<span class="cjk" lang="zh-Hans">%s</span>' % esc(l)) if cjk(l) else esc(l) for l in ls)
+        return '<p class="poem"><span class="en">%s</span><span class="zh" lang="zh-Hans">%s</span></p>' % (lines(p['en']), lines(p['zh']))
+    return '<p>%s</p>' % bi(p['en'], p['zh'])
+
+
+def essay_block(w):
+    e = w.get('essay')
+    credit = w.get('credit')
+    if not e and not credit:
+        return ''
+    out = []
+    if e:
+        if e.get('title'):
+            out.append('<h2 class="essay-title">%s</h2>' % bi(e['title'], e['title_zh']))
+        paras = e['paras']
+        k = e.get('fold_after')
+        out.extend(essay_para(p) for p in (paras[:k] if k else paras))
+        if k and len(paras) > k:
+            out.append('<details class="essay-more"><summary class="mono">%s</summary>%s</details>' % (
+                bi(e.get('more_en', 'Read more'), e.get('more_zh', '展开全文')), ''.join(essay_para(p) for p in paras[k:])))
+    if credit:
+        out.append('<p class="essay-credit mono">%s</p>' % bi(credit['en'], credit['zh']))
+    return '<section class="essay rv" aria-label="%s">\n%s\n</section>' % (a(e.get('title', 'Text') if e else 'Credits'), '\n'.join(out))
+
+
 def work_page(idx):
     w = WORKS[idx]
     rel = '../../'
@@ -347,24 +374,20 @@ def work_page(idx):
     if meta:
         meta_html = '<dl class="work-meta mono">%s</dl>' % ''.join('<dt>%s</dt><dd>%s</dd>' % (bi(e, z), bi(ev, zv, raw=True)) for e, z, ev, zv in meta)
     desc_html = ''
-    if w.get('desc'):
-        desc_html = '<p class="work-desc">%s</p>' % bi(w['desc'], w.get('desc_zh', w['desc']))
+    if w.get('text'):
+        desc_html = '<div class="work-desc">%s</div>' % ''.join('<p>%s</p>' % bi(p['en'], p['zh']) for p in w['text'])
+    essay_html = essay_block(w)
     links = []
-    if SITE.get('email'):
-        sub = 'Inquiry: ' + w['title']
-        links.append('<a class="mono" href="mailto:%s?subject=%s">%s</a>' % (a(SITE['email']), a(sub), bi('Inquire about this work ↗', '咨询此作品 ↗')))
-    else:
-        links.append('<a class="mono" href="%scontact/">%s</a>' % (rel, bi('Inquire about this work ↗', '咨询此作品 ↗')))
     if w.get('video', {}).get('youtube'):
         links.append('<a class="mono" href="https://youtu.be/%s" target="_blank" rel="noopener">%s</a>' % (w['video']['youtube'], bi('Watch the video ↗', '观看影像 ↗')))
     if w.get('process'):
         links.append('<a class="mono" href="#process">%s</a>' % bi('Process ↓', '创作过程 ↓'))
-    info_html = f'''<aside class="work-info">
+    info_html = f'''<aside class="work-info{' has-text' if w.get('text') else ''}">
     <p class="work-no mono"><b>{num(idx + 1)}</b><span>/ {num(N)}</span><span class="fig-count">{count_label(len(w['images']))}</span></p>
     <h1 class="work-title{' long' if long else ''}"><span class="en">{esc(w['title'])}<span class="work-alt zhs" lang="zh-Hans">{esc(w['title_zh'])}</span></span><span class="zh" lang="zh-Hans">{esc(w['title_zh'])}<span class="work-alt">{esc(w['title'])}</span></span></h1>
     {meta_html}
     {desc_html}
-    <div class="work-links">{''.join(links)}</div>
+    {('<div class="work-links">' + ''.join(links) + '</div>') if links else ''}
   </aside>'''
 
     figs = []
@@ -436,14 +459,17 @@ def work_page(idx):
   {info_html}
   {figs_html}
   </div>
+  {essay_html}
   {video_html}
   {process_html}
   {nav_html}
-</article>
-<div class="cursor-label mono" data-kind="view" aria-hidden="true"></div>'''
+</article>'''
     c = cover(w)
     desc = '%s — a work by Yinghan Zhang, stone artist and printmaker in Seattle.' % w['title']
-    if w.get('medium'):
+    if w.get('text'):
+        first = w['text'][0]['en']
+        desc = first if len(first) <= 158 else first[:155].rsplit(' ', 1)[0].rstrip(',;:—') + '…'
+    elif w.get('medium'):
         desc = '%s (%s%s) — a work by Yinghan Zhang, stone artist and printmaker in Seattle.' % (
             w['title'], (str(w['year']) + ', ') if w.get('year') else '', w['medium'])
     ld = {'@context': 'https://schema.org', '@type': 'VisualArtwork', 'name': w['title'], 'alternateName': w['title_zh'],

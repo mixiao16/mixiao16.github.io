@@ -20,26 +20,26 @@
       "images": [
         {
           "src": "Silent Veins 静观/Zhang_Yinghan_09.jpg",
-          "alt": "Installation view: large stone-rubbing forms on folding screens, with a small video monitor",
-          "alt_zh": "装置现场:折屏上的巨幅石形拓印,中间嵌有一台小型视频屏幕",
+          "alt": "Installation view of Where Mountains Meet, a wall-scale collage of stone rubbings, with a small video monitor",
+          "alt_zh": "装置现场:墙面上的大型拓印拼贴《群山交汇处》,一侧嵌有小型视频屏幕",
           "role": "plate"
         },
         {
           "src": "Silent Veins 静观/DSC_5212.jpg",
-          "alt": "Installation view: folding screens of stone rubbings in a dark room corner",
-          "alt_zh": "装置现场:暗室一角的石拓折屏",
+          "alt": "Where Mountains Meet on the walls, with the folding screen Gesture of Time standing in front",
+          "alt_zh": "《群山交汇处》环绕墙面,前方立着折屏《时间的姿态》",
           "role": "plate"
         },
         {
           "src": "Silent Veins 静观/DSC_5211.jpg",
-          "alt": "Installation view: a standing folding screen printed with rubbed stone texture",
-          "alt_zh": "装置现场:立式折屏上的石纹拓印",
+          "alt": "Gesture of Time, a four-panel folding screen, in front of Where Mountains Meet",
+          "alt_zh": "四扇折屏《时间的姿态》,背后是《群山交汇处》",
           "role": "plate"
         },
         {
           "src": "Silent Veins 静观/Zhang_Yinghan_08.jpg",
-          "alt": "Detail of the folding screens, tall view",
-          "alt_zh": "折屏局部(竖幅)",
+          "alt": "Gesture of Time, detail of the folding screen",
+          "alt_zh": "《时间的姿态》折屏局部",
           "role": "plate"
         },
         {
@@ -231,6 +231,91 @@
         "youtube": "jdiPZLdzP4w",
         "title": "Gesture of Time",
         "title_zh": "时间的姿态"
+      },
+      "medium": "Full-shape stone rubbing, water-based woodcut, silver leaf, tea and handmade paper",
+      "medium_zh": "全形拓、水印木刻、银箔、茶与手工纸",
+      "text": [
+        {
+          "en": "My artistic practice centers on the textures and philosophies embedded in traditional Chinese techniques, particularly full-shape stone rubbing and water-based woodcut. I work with materials that carry time—handmade paper, silver leaf, natural stones, and tea—allowing their inherent qualities to shape the meaning of each piece. Drawing from Daoist philosophy and personal memory, I see materials not as passive tools, but as collaborators in storytelling.",
+          "zh": "我的艺术实践关注中国传统技艺中所蕴含的肌理与哲思,尤其是全形拓与水印木刻。我使用承载着时间的材料——手工纸、银箔、天然石头与茶——让它们本身的特质去塑造每件作品的意义。借由道家思想与个人记忆,我不把材料视为被动的工具,而视为讲述故事的合作者。"
+        },
+        {
+          "en": "In Gesture of Time, a four-panel folding screen, and Where Mountains Meet, a large-scale collage, I explore the scholar’s stone as both subject and method. These works integrate stone textures, oxidized silver, and layered paper surfaces to reflect the passage of time, cultural lineage, and emotional memory. Through transformation—rubbing, staining, weathering—I let materials speak in their own quiet language.",
+          "zh": "在四扇折屏《时间的姿态》与大型拼贴《群山交汇处》中,我把文人石既作为题材,也作为方法。这些作品融合了石的肌理、氧化的银与层叠的纸面,映照时间的流逝、文化的传承与情感的记忆。通过拓印、染色、风化等种种转化,我让材料以它们自己安静的语言说话。"
+        },
+        {
+          "en": "My work creates contemplative spaces where tradition meets innovation, inviting viewers to reflect on the relationships between nature and humanity, material and spirit, memory and presence.",
+          "zh": "我的作品营造出传统与创新相遇的静观之所,邀请观者思索自然与人、物质与精神、记忆与当下之间的关系。"
+        }
+      ],
+      "essay": {
+        "title": "Silent Veins: Integrating Tradition with Innovation",
+        "title_zh": "静观:传统与创新的融合",
+        "fold_after": 2,
+        "more_en": "Read the full statement",
+        "more_zh": "阅读全文",
+        "paras": [
+          {
+            "en": "As I explore the intersection between traditional craftsmanship and contemporary expression, the scholar's stone has remained the core of my creative practice. It serves as both a source of visual and material inspiration and a meaningful reflection of my connection to family memories, cultural identity, and emotional ties. Rubbing and water-based woodcut are two fundamental techniques I have drawn from traditional arts. At the crossroads of these methods, I strive to let the materials speak, making the object a medium for expression and the subject of the narrative.",
+            "zh": "在探索传统工艺与当代表达的交汇时,文人石始终是我创作实践的核心。它既是视觉与材料上的灵感来源,也深切映照着我与家族记忆、文化身份和情感纽带之间的联结。拓印与水印木刻是我从传统艺术中汲取的两种基本技法。在这两种方法的交汇处,我努力让材料自己说话,让物既成为表达的媒介,也成为叙事的主体。"
+          },
+          {
+            "en": "Influenced by Daoist philosophy, true understanding does not always come through words, but through attentiveness to the rhythms of nature, the texture of silence, and the subtle flow of time. In the Daoist view, stones are not inert matter but manifestations of the Dao itself, formed by wind, water, and time, shaped without will, yet full of meaning. This sensibility has deeply shaped my approach to artmaking. I do not try to impose meaning onto the stone; instead, I listen for what is already there.",
+            "zh": "受道家思想影响,我相信真正的理解并不总是来自言语,而是来自对自然节律、静默质地与时间细微流动的体察。在道家看来,石头并非无生命的死物,而是道本身的显现——由风、水与时间塑成,无心而成,却意蕴充盈。这种感知深刻地塑造了我的创作方式。我不试图把意义强加于石头,而是去聆听它本已具有的东西。"
+          },
+          {
+            "en": "The title of my thesis, Silent Veins, draws inspiration from the Daoist concept of “jing guan” (静观), or “quiet observation,” a term found in the writings of Zhuangzi, one of the most influential thinkers of Daoism. In his words: “The perfected person has no self, the spiritual person no merit, the sage no name. He observes the transformations of the world in stillness, without being swayed by external things.” This idea also mirrors the traditional practice of appreciating scholar’s stones—not through forceful interpretation, but through stillness, intuition, and inward reflection.",
+            "zh": "我的论文题目 Silent Veins(静观)取意于道家“静观”的观念,即“安静地观照”——这一说法见于道家最具影响力的思想家之一庄子的著述。庄子说:“至人无己,神人无功,圣人无名。”至人于静中观照世间万物的变化,不为外物所动。这一理念也与传统的赏石方式相呼应——不靠强行解读,而凭静心、直觉与内省。"
+          },
+          {
+            "en": "In this context, “Veins” refers not only to the physical grain of stone but also to deeper layers of meaning: the veins of memory, kinship, and cultural lineage. Silent Veins thus poetically express the vitality and emotion embedded within silent materials—those that do not speak yet pulse with presence, time, and meaning.",
+            "zh": "在这里,“Veins(脉)”不仅指石头的物理纹理,也指向更深层的含义:记忆之脉、亲缘之脉与文化传承之脉。因此,Silent Veins 以诗意的方式表达了蕴藏在静默材料之中的生命力与情感——它们不言不语,却随着存在、时间与意义而搏动。"
+          },
+          {
+            "en": "From this philosophical foundation, my thesis work unfolds. The scholar’s stone, long admired for its quiet power and abstract beauty, becomes subject and method in my practice. Through rubbing—an act of attentive contact—I begin translating the silent language of stone into image. Each groove, each subtle vein impressed on paper, becomes a trace of time, memory, and emotion. These silent veins are not only geological—they are personal and cultural, linking my present hand to the ancient rhythm of craft and my own familial past.",
+            "zh": "我的论文作品便从这一哲学基础上展开。文人石向来因其沉静的力量与抽象之美而为人称赏,在我的实践中,它既是题材,也是方法。拓印是一种专注的触碰;借由它,我开始把石头无声的语言转译为图像。每一道沟壑、每一缕印在纸上的细微纹脉,都成为时间、记忆与情感的痕迹。这些静默的纹脉不只属于地质——它们也是个人的、文化的,把我此刻的手与古老的工艺节律、与我自己的家族过往连在一起。"
+          },
+          {
+            "en": "Gesture of Time explores how material changes and continues under the influence of time through stone patterns, tea stains, and the discoloration of silver leaf. Every detail bears the mark of time, making the work itself a witness to time. Through this philosophical exploration of “material and time,” I hope to convey the complex relationships between humanity and nature, culture and memory, spirit and material, and to show the endless potential and important impact of time in artistic creation.",
+            "zh": "《时间的姿态》借由石纹、茶渍与银箔的变色,探索材料如何在时间的作用下变化与延续。每一处细节都带着时间的印记,使作品本身成为时间的见证。通过对“材料与时间”的哲学探索,我希望传达人与自然、文化与记忆、精神与物质之间复杂的关系,并展现时间在艺术创作中无尽的可能与重要的影响。"
+          },
+          {
+            "en": "Where Mountains Meet is the second major piece in my exhibition. It is a large-scale collage that unfolds an imagined mountain landscape—an arena where natural forces and cultural memories converge. In this work, stone textures cascade inward like a tidal wave, sweeping from both sides toward the center, drawing the eye into a silent yet powerful axis of movement.",
+            "zh": "《群山交汇处》是展览中的第二件主要作品。这是一件大型拼贴,铺展开一片想象中的山景——自然之力与文化记忆在此交汇。作品中,石的肌理如潮水般向内倾泻,从两侧涌向中心,把目光引向一条静默而有力的运动轴线。"
+          },
+          {
+            "en": "The foundation of this landscape lies in the rubbing of stones—an ancient technique that captures more than form. Using scholar’s stones from my home in China alongside local stones from the Providence River’s banks, I collaged their textures into a continuous mountain range. Each rubbing preserves a stone’s unique pattern of veins—natural imprints shaped by time, weather, and geological force. These “veins” are not merely surface marks; they are the silent language of the stone, its way of speaking across centuries. Nature tells its story through them, and cultural memory finds tactile form.",
+            "zh": "这片山景的根基在于石头的拓印——一种所捕捉的远不止形状的古老技艺。我用中国家中的文人石,以及普罗维登斯河岸边的本地石头,把它们的肌理拼贴成一道连绵的山脉。每一张拓片都保存了一块石头独有的纹脉——由时间、气候与地质之力塑造的天然印记。这些“纹脉”不只是表面的痕迹,而是石头无声的语言,是它跨越世纪说话的方式。自然借它们讲述自己的故事,文化记忆也由此获得可以触摸的形态。"
+          },
+          {
+            "en": "Using these rubbings in my artwork, I create a space where different places and identities can connect—a mountain made of texture, where personal memories and cultural history come together. The stones become vessels of belonging, their intertwined veins reflecting the interwoven paths of my journey: from East to West, from tradition to transformation.",
+            "zh": "在作品中运用这些拓片,我营造出一个让不同地方与身份得以相连的空间——一座由肌理构成的山,个人记忆与文化历史在此汇聚。石头成为归属的容器,它们交织的纹脉映照着我交错的旅程:从东方到西方,从传统到转化。"
+          },
+          {
+            "en": "I treated the silver leaf with sulfur, which fastened the oxidation process—the silver surface transitioning from luminous brightness to a subdued, mottled gray. This material change is not simply decorative. It creates a conversation with time, showing how cultural identity develops slowly and changes over time. As the silver darkens, it mirrors how identities are layered, weathered, and reshaped over time.",
+            "zh": "我用硫处理银箔,加速其氧化——银面从明亮的光泽逐渐转为沉静、斑驳的灰色。这种材料的变化并非单纯的装饰。它与时间展开对话,显示文化身份如何缓慢发展、随时间而变。银色渐暗,也映照出身份如何随着时间层层累积、经受风化、被重新塑造。"
+          },
+          {
+            "en": "Each piece of silver leaf, each rubbed texture, contributes to a landscape that is not only seen but also felt. The work moves beyond flatness, becoming spatial and immersive. It invites the viewer to enter the image, walk among the mountains’ silent veins, and listen to what cannot be spoken. Like traditional Chinese landscape (山水) painting, this landscape does not represent a literal place. Instead, it evokes an inner geography—a space shaped by spirit, memory, and time.",
+            "zh": "每一片银箔、每一处拓印的肌理,共同构成一片不只可看、也可感的山景。作品超越了平面,变得具有空间感与沉浸感。它邀请观者走进画面,行于群山静默的纹脉之间,聆听那些无法言说的东西。如同中国传统山水画,这片山景并不描绘某个真实的地点,而是唤起一种内在的地理——一个由精神、记忆与时间塑造的空间。"
+          },
+          {
+            "en": "In Where Mountains Meet, the stone speaks not through voice but through texture. Its veins become lines of memory, echoing across time and culture, inviting each viewer to read their own reflection in its silent pulse.",
+            "zh": "在《群山交汇处》中,石头不以声音说话,而以肌理说话。它的纹脉化作记忆的线条,在时间与文化之间回响,邀请每位观者在它静默的脉动中读出自己的倒影。"
+          },
+          {
+            "en": "I consciously allow the materials to take on narrative functions in these two works. The stones are not passive objects but partners that help me tell the story and reflect on the concepts. My creation is a continuation of traditional techniques and an integrated practice that merges bodily experience, family memory, and cultural context. The concepts of “emptiness,” “fullness,” “blank space,” and “time” from Chinese culture engage with contemporary discussions on materiality and emotion. This work is an expression of personal roots and a visual experiment that crosses temporal, spatial, and geographical boundaries through materiality.",
+            "zh": "在这两件作品中,我有意让材料承担叙事的功能。石头不是被动的物件,而是帮助我讲述故事、思考观念的伙伴。我的创作既是对传统技艺的延续,也是一种融合身体经验、家族记忆与文化语境的综合实践。中国文化中“虚”“实”“留白”与“时间”的观念,在此与当代关于物质性与情感的讨论相互对话。这件作品是对个人根源的表达,也是一场借由物质性跨越时间、空间与地理边界的视觉实验。"
+          },
+          {
+            "en": "My works aim to provide a spiritual space, allowing viewers to pause, reflect, and feel, ultimately finding their emotional sound. Whether through the marks of the hand-crafted or the natural imprints of materials, these details can serve as a bridge across language and culture, evoking a renewed perception of the relationships between people and objects, time and memory, tradition and the present.",
+            "zh": "我的作品希望提供一个精神空间,让观者停下来、思考、感受,最终找到属于自己的情感之声。无论是手工留下的痕迹,还是材料天然的印记,这些细节都可以成为跨越语言与文化的桥梁,唤起人们重新感知人与物、时间与记忆、传统与当下之间的关系。"
+          }
+        ]
+      },
+      "credit": {
+        "en": "Photography: Ruby Wang, Alex Wen, Oded Daniely",
+        "zh": "摄影:Ruby Wang、Alex Wen、Oded Daniely"
       }
     },
     {
@@ -251,6 +336,12 @@
           "alt": "The rubbing laid out on the table among tools",
           "alt_zh": "工作台上的拓印与工具",
           "role": "plate"
+        }
+      ],
+      "text": [
+        {
+          "en": "A full-shape rubbing of a scholar’s stone, set alone on pale paper. Ink is worked into every ridge, fold and hollow, so the stone’s surface—the marks left by wind, water and time—is carried onto the sheet as a dense field of light and dark.",
+          "zh": "一幅文人石的全形拓,独置于淡色纸面之上。墨被细细拓进每一道棱脊、皱褶与孔洞,石面上风、水与时间留下的痕迹,便化作纸上浓淡交织的肌理。"
         }
       ]
     },
@@ -273,6 +364,14 @@
           "alt_zh": "与银色的《拥抱》并置展出",
           "role": "plate"
         }
+      ],
+      "medium": "Stone rubbing with silver leaf",
+      "medium_zh": "拓印、银箔",
+      "text": [
+        {
+          "en": "A stone rubbing highlighting the cracks of a heart-shaped form with silver leaf rather than concealing them. Inspired by the philosophy of scholar’s stones (gongshi), this work explores the beauty of imperfection—embracing flaws as essential to identity and strength. In Chinese tradition, scholar’s stones are treasured not for perfection but for their natural irregularities, which reveal the passage of time and the forces of nature that shaped them. Just as scholars found wisdom and inspiration in the unique contours of these stones, this piece reflects the idea that brokenness is not a weakness but a testament to endurance and transformation. By accentuating rather than disguising the fractures, Heart of Stone embodies the Daoist philosophy of embracing the natural state of things, finding beauty in impermanence, and recognizing that true strength lies in authenticity.",
+          "zh": "一幅心形的拓印,以银箔突显而非掩盖它的裂痕。受文人石(供石)哲学的启发,这件作品探索不完美之美——把瑕疵视为身份与力量不可或缺的一部分。在中国传统中,文人石受珍视并非因为完美,而是因为它们天然的不规则,这些不规则显露出时间的流逝与塑造它们的自然之力。正如文人从这些石头独特的轮廓中获得智慧与灵感,这件作品也表达了这样的理念:破碎不是软弱,而是坚韧与蜕变的证明。通过强调而非掩饰裂痕,《石心》体现了道家顺应事物本然状态的思想——在无常中发现美,并认识到真正的力量在于真实。"
+        }
       ]
     },
     {
@@ -294,7 +393,37 @@
           "alt_zh": "《拥抱》与《石心》并排挂展",
           "role": "plate"
         }
-      ]
+      ],
+      "medium": "Stone rubbing with silver leaf",
+      "medium_zh": "拓印、银箔",
+      "text": [
+        {
+          "en": "A stone rubbing with silver leaf depicting a female figure embracing an abstract form, inspired by the philosophy of scholar’s stones in Chinese tradition. Just as these stones are valued for their natural imperfections and unique shapes, this work reflects the idea of self-acceptance—embracing one’s flaws as part of one’s inherent beauty and strength. The gesture of the figure mirrors the way scholars admired and contemplated these stones, finding wisdom and harmony in their irregular forms.",
+          "zh": "一幅结合银箔的拓印,描绘一位女性拥抱着一个抽象的形体,灵感来自中国传统中的文人石哲学。正如这些石头因天然的不完美与独特形态而被珍视,这件作品表达了自我接纳的理念——拥抱自己的瑕疵,视之为与生俱来的美与力量的一部分。人物的姿态,映照着文人赏玩、静观这些石头的方式:在不规则的形态中寻得智慧与和谐。"
+        }
+      ],
+      "essay": {
+        "title": "The Perfect Flaws",
+        "title_zh": "完美的瑕疵",
+        "paras": [
+          {
+            "en": "Wandering through my father’s collection feels like walking through a forest of stone. The smell in the air is special to me. Gradually, I fell in love with these stones of all forms. Some are unyielding and resilient, others smooth and gentle like water. Some seem to be as light as drifting clouds, while others are dark and dense like sumi ink. They all look so different and all seem to have been through a lot. The holes, the edges and the fractures are showing the work of time. All those things that seem to be the flaws have become the beauty in one’s eye. Man says it’s the flaws that make it so perfect.",
+            "zh": "漫步在父亲的藏石之间,就像走进一片石头的森林。空气里的气味对我来说很特别。渐渐地,我爱上了这些形态各异的石头。有的坚硬刚毅,有的如水般光滑温润;有的轻盈得像飘浮的云,有的又像墨一样浓黑厚重。它们模样各不相同,却似乎都经历过许多。孔洞、棱角与裂痕,都显示着时间的功夫。那些看似瑕疵的地方,在人的眼中都成了美。人们说,正是瑕疵让它如此完美。"
+          },
+          {
+            "en": "Learning stone rubbing has been life changing for me. I start to have a more intimate connection with those stones. I love to feel how the temperature change in my hands and feel the shape of them, harsh or smooth, sharp or rounded. The most intriguing part is getting those intricate and elusive patterns with the rubbing technique. In my time I spent with them, I saw the vastness of the universe and, through that, I caught a glimpse of my own soul.",
+            "zh": "学习拓印改变了我的生活。我开始与那些石头有了更亲密的联结。我喜欢感受它们在手中温度的变化,感受它们的形状——粗粝或光滑,尖锐或圆润。最迷人的部分,是用拓印的技法把那些繁复而难以捉摸的纹理留下来。在与它们相处的时光里,我看见了宇宙的浩瀚,也由此瞥见了自己的灵魂。"
+          },
+          {
+            "en": "Stone rubbing is spiritual practice for me. It is a process that requires a lot of time and patience. I see myself talking to the stone, touching the stone, rubbing the stone and somehow becoming a part of the stone. Feeling the stone from its shape to the most finest texture is so calming and relaxing. And I want you to feel it too.",
+            "zh": "拓印对我而言是一种精神修行。这个过程需要大量的时间与耐心。我看见自己与石头说话、触摸石头、拓印石头,并在某种程度上成为石头的一部分。从形状到最细微的纹理去感受一块石头,让人如此平静、放松。我也希望你能感受到。"
+          },
+          {
+            "en": "I want to bring my vision of the spirit of stone through stone rubbing and recreation. Using the flaws to create as a gesture of acceptance.",
+            "zh": "我想通过拓印与再创作,呈现我所理解的石之精神——以瑕疵来创作,作为一种接纳的姿态。"
+          }
+        ]
+      }
     },
     {
       "slug": "portrait",
@@ -316,7 +445,31 @@
           "role": "plate",
           "zoom": true
         }
-      ]
+      ],
+      "medium": "Mokuhanga print, chine-collé and stone rubbing",
+      "medium_zh": "水印木刻(Mokuhanga)、薄纸裱贴(chine-collé)与拓印",
+      "text": [
+        {
+          "en": "Portrait is a mokuhanga print combined with chine-collé and stone rubbing, creating a powerful self-reflection that intertwines the spirit of the scholar stone with the philosophical depth behind it. The work explores the profound relationship between nature, art, and the human soul, drawing upon the long tradition of stone appreciation in Chinese culture.",
+          "zh": "《肖像》是一件结合薄纸裱贴(chine-collé)与拓印的水印木刻,形成一次有力的自我审视,将文人石的精神与其背后的哲学深度交织在一起。作品借鉴中国文化中悠久的赏石传统,探索自然、艺术与人的灵魂之间深刻的关系。"
+        }
+      ],
+      "essay": {
+        "paras": [
+          {
+            "en": "At the heart of this piece is the idea of the scholar stone, a symbol of both natural beauty and spiritual resonance. Through the delicate process of mokuhanga printmaking, the print captures the raw, elemental nature of the stone, while chine-collé adds a layer of refinement, enhancing the textural qualities of the image. The stone rubbing technique brings an additional depth, evoking the tactile connection between the artist and the natural world.",
+            "zh": "这件作品的核心是文人石的意象——它既象征自然之美,也象征精神的共鸣。借由水印木刻细腻的制作过程,画面捕捉到石头原始、本真的质地;薄纸裱贴则增添了一层精致,强化了画面的肌理。拓印技法带来又一层深度,唤起艺术家与自然世界之间可触摸的联结。"
+          },
+          {
+            "en": "This portrait is not only a visual expression but also a meditation on the philosophy of stone appreciation. The scholar stone, with its inherent simplicity, is a mirror of the spirit—an object that invites reflection and introspection. It symbolizes resilience, endurance, and the harmonious relationship between humanity and nature. Just as the scholar stone has been a symbol of wisdom and contemplation in Chinese tradition, this print aims to carry that same spirit, offering a space for the viewer to connect with their own inner world.",
+            "zh": "这幅肖像不仅是视觉的表达,也是对赏石哲学的冥想。文人石以其天然的质朴,成为精神的一面镜子——一件邀人沉思与内省的物。它象征着韧性、坚忍,以及人与自然之间的和谐。正如文人石在中国传统中一直是智慧与静思的象征,这幅版画也希望承载同样的精神,为观者提供一个与自己内心世界相连的空间。"
+          },
+          {
+            "en": "By blending these techniques, Portrait becomes a synthesis of art and philosophy, honoring the timeless tradition of stone appreciation while exploring the deeper meaning of self-reflection and spiritual growth.",
+            "zh": "通过融合这些技法,《肖像》成为艺术与哲学的综合——既致敬历久弥新的赏石传统,也探索自我审视与精神成长更深层的意义。"
+          }
+        ]
+      }
     },
     {
       "slug": "spirit-of-stone",
@@ -326,14 +479,14 @@
       "images": [
         {
           "src": "Spirit of Stone/IMG_8889.jpg",
-          "alt": "A tall red column of cut and printed forms hanging in a historic gallery",
-          "alt_zh": "悬挂在历史展厅中的红色高柱状装置",
+          "alt": "Spirit of Stone: a tall spine-like form screen-printed in red on clear acetate, hanging in a historic gallery",
+          "alt_zh": "石魂:红色丝网印在透明醋酸胶片上的脊柱状形态,悬于历史展厅中",
           "role": "plate"
         },
         {
           "src": "Spirit of Stone/IMG_8890.jpg",
-          "alt": "Close view of the red column and its reflection on a clear surface",
-          "alt_zh": "红色柱体及其在透明面上的倒影",
+          "alt": "Close view of the printed acetate and its reflection",
+          "alt_zh": "印有图案的醋酸胶片与倒影近观",
           "role": "plate"
         },
         {
@@ -341,6 +494,14 @@
           "alt": "The installation seen through the gallery doorway at night",
           "alt_zh": "夜间透过展厅门洞看见的装置",
           "role": "plate"
+        }
+      ],
+      "medium": "Screen print on clear acetate roll",
+      "medium_zh": "透明醋酸胶片卷上的丝网印刷",
+      "text": [
+        {
+          "en": "A screen-printed work on clear acetate, creating a floating spine-like form of the scholar’s stone. Representing the traditional Chinese spirit, the scholar’s stone embodies toughness and strength, standing as a symbol of resilience and cultural heritage.",
+          "zh": "一件印在透明醋酸胶片上的丝网版画,构成一个悬浮的、如脊柱般的文人石形态。文人石代表着中国传统精神,体现坚韧与力量,是韧性与文化传承的象征。"
         }
       ]
     },
@@ -378,6 +539,14 @@
           "role": "plate",
           "zoom": true
         }
+      ],
+      "medium": "Woodcut print with chine-collé on handmade paper",
+      "medium_zh": "手工纸上的木刻版画与薄纸裱贴(chine-collé)",
+      "text": [
+        {
+          "en": "A print of a family stone, shaped like a bowing figure, placed at our doorstep as a symbol of hospitality. Reflecting traditional Chinese values of respect and politeness, this work honors its cultural significance and enduring presence.",
+          "zh": "一幅描绘家中一块石头的版画。这块石头形似一个躬身行礼的人,被安放在我家门口,作为好客的象征。作品体现了中国传统中尊重与礼貌的价值观,致敬这块石头的文化意义与它长久的存在。"
+        }
       ]
     },
     {
@@ -388,15 +557,23 @@
       "images": [
         {
           "src": "Within the Stone I/IMG_3899.jpg",
-          "alt": "A figure wearing a printed garment, lit by projected light in a window-lined room",
-          "alt_zh": "身着印花服饰的人物,立于被投影光照亮的窗边",
+          "alt": "A figure wearing the printed paper garment, lit by the projected stop-motion film",
+          "alt_zh": "身着印花纸服装的人,被投映的定格动画照亮",
           "role": "plate"
         },
         {
           "src": "Within the Stone I/Spirit of Stone.png",
-          "alt": "A quilted garment printed in teal, shown on a hanger",
-          "alt_zh": "悬挂展示的青绿印花绗缝外衣",
+          "alt": "The screen-printed paper garment on a hanger",
+          "alt_zh": "悬挂展示的丝网印刷纸服装",
           "role": "plate"
+        }
+      ],
+      "medium": "Installation art",
+      "medium_zh": "装置艺术",
+      "text": [
+        {
+          "en": "An immersive installation featuring a screen-printed handmade Kazuo paper garment, projected with a mokuhanga-printed stop-motion film. The piece evokes a flowing, water-like presence around the stone, with the garment embodying the human form and carrying the philosophical essence of the scholar’s stone.",
+          "zh": "一件沉浸式装置:一件丝网印刷的手工楮纸服装,其上投映着一段以水印木刻制作的定格动画。作品在石的周围唤起一种如水般流动的存在感,服装则化身人的形体,承载着文人石的哲学内涵。"
         }
       ]
     },
@@ -414,8 +591,8 @@
         },
         {
           "src": "Within the Stone II/IMG_5810.jpg",
-          "alt": "Tall ink-printed panels standing in a sunlit window",
-          "alt_zh": "立于日光窗前的墨色长幅",
+          "alt": "Woodcut-printed stone panels standing in a sunlit window",
+          "alt_zh": "立于日光窗前的木刻石头长幅",
           "role": "plate"
         },
         {
@@ -424,7 +601,64 @@
           "alt_zh": "纸质服饰局部(穿着)",
           "role": "plate"
         }
-      ]
+      ],
+      "medium": "Installation art",
+      "medium_zh": "装置艺术",
+      "text": [
+        {
+          "en": "An installation featuring a double-sided screen-printed Kazuo paper garment, set against a woodcut-printed stone figure. The space flows with the presence of stone, while the two-piece garment, resembling armor, evokes the spirit of a ninja navigating the city—blending tradition, protection, and movement.",
+          "zh": "一件装置:一套双面丝网印刷的楮纸服装,背后衬着木刻印制的石头形象。空间中流动着石的存在感;这套形似铠甲的两件式服装,唤起一位穿行于城市之中的忍者的精神——融合了传统、守护与行动。"
+        }
+      ],
+      "essay": {
+        "paras": [
+          {
+            "en": "I’ve been curious about my father’s particular love for his stones.",
+            "zh": "我一直好奇,父亲为何那样钟爱他的石头。"
+          },
+          {
+            "en": "He told me that a stone is the carrier of a history, you can see through time from its texture. What they went through creates their unique form we see today.",
+            "zh": "他告诉我,一块石头承载着一段历史,从它的纹理里可以看穿时间。它们所经历的一切,造就了我们今天所见的独特形态。"
+          },
+          {
+            "en": "My father also said, a real man should be like a stone. You should always follow your heart and be devoted to yourself, in the end, you shall find your inner peace. Which is the ultimate way to live in this chaotic world.",
+            "zh": "父亲还说,真正的人应当像一块石头:始终遵从自己的内心,忠于自己,最终便能找到内心的平静。这是在纷乱世界中最好的活法。"
+          },
+          {
+            "en": "In the study of stone I slowly understood what my father said.",
+            "zh": "在研究石头的过程中,我慢慢明白了父亲的话。"
+          },
+          {
+            "en": "The special form of stone came from the magic craftsmanship of nature. They became what they are through time and thousands of temper of nature and stand still in such an elegant and powerful form.",
+            "zh": "石头特别的形态来自大自然神奇的造化。它们历经时间与自然千百次的锤炼,才成为今天的模样,以如此优雅而有力的姿态静立。"
+          },
+          {
+            "en": "Its beauty was found by a person that truly admired it and passed it down as a treasure. The stone remains its own beauty after years and years.",
+            "zh": "它的美被真正欣赏它的人发现,并作为珍宝传承下去。年复一年,石头始终保有自己的美。"
+          },
+          {
+            "en": "I see my father in them.",
+            "zh": "我在它们身上看见了父亲。"
+          },
+          {
+            "poem": true,
+            "en": [
+              "I want to be like the stone",
+              "A man with dedication and perseverance.",
+              "To find someone who knows the song in my head, a land of peace and peace in my mind.",
+              "",
+              "我想成为这样的一块石头",
+              "一颗心无旁骛 坚定执着的石头",
+              "寻得一己之音 一方净土 一心安宁"
+            ],
+            "zh": [
+              "我想成为这样的一块石头",
+              "一颗心无旁骛 坚定执着的石头",
+              "寻得一己之音 一方净土 一心安宁"
+            ]
+          }
+        ]
+      }
     },
     {
       "slug": "shape-of-stone",
@@ -445,7 +679,15 @@
         "poster": "shape-of-stone-poster.webp",
         "caption": "Shape of Stone, video",
         "caption_zh": "《石之形》影像"
-      }
+      },
+      "medium": "Mokuhanga print",
+      "medium_zh": "水印木刻(Mokuhanga)",
+      "text": [
+        {
+          "en": "This work captures the fluidity and movement inherent in stone, an element often perceived as static and unyielding. Through the multilayered technique of mokuhanga printing, the piece evokes the visual sensation of stone flowing like water, revealing its dynamic and ever-changing nature. The entire composition is formed by combining multiple identical prints, emphasizing repetition and subtle variations to mirror the poetic essence of scholar’s stones (gongshi). In Chinese tradition, these revered stones are not merely objects of admiration but embodiments of natural transformation, shaped by wind, water, and time. Shape of Stone presents an alternative perspective—one that highlights the softness within the hard, the fluidity within the solid, much like a poem capturing the silent yet profound passage of time.",
+          "zh": "石头常被视为静止、坚硬之物,这件作品却捕捉了它内在的流动与运动。借由多层套印的水印木刻技法,作品唤起石头如水般流动的视觉感受,显露出它灵动、变化不息的本性。整幅画面由多张相同的版画组合而成,以重复与细微的差异,映照文人石(供石)的诗意本质。在中国传统中,这些备受尊崇的石头不仅是赏玩之物,更是自然变化的化身,由风、水与时间塑造而成。《石之形》提供了另一种视角——凸显刚中之柔、固中之流,犹如一首诗,捕捉时间无声而深远的流逝。"
+        }
+      ]
     },
     {
       "slug": "the-peach",
@@ -460,6 +702,14 @@
           "role": "plate",
           "zoom": true
         }
+      ],
+      "medium": "Stone rubbing with mokuhanga frame",
+      "medium_zh": "拓印,水印木刻边框",
+      "text": [
+        {
+          "en": "A rubbing of a peach-shaped stone, framed with mokuhanga. In Chinese culture, the peach symbolizes longevity and carries wishes for luck and happiness. This work honors the stone’s form and cultural significance, blending traditional techniques with symbolic meaning.",
+          "zh": "一块桃形石头的拓印,四周以水印木刻作框。在中国文化中,桃象征长寿,寄寓着对好运与幸福的祝愿。这件作品致敬这块石头的形态与文化意义,把传统技法与象征意涵融为一体。"
+        }
       ]
     },
     {
@@ -470,8 +720,8 @@
       "images": [
         {
           "src": "Trap/IMG_2839.jpg",
-          "alt": "Trap: two framed panels of cellular, web-like line work",
-          "alt_zh": "陷阱:两幅装框的网状细胞纹样",
+          "alt": "Trap: two framed panels, woodcut and silkscreened plexiglass showing a butterfly caught in a web",
+          "alt_zh": "陷阱:两幅装框作品,木刻与丝网印刷亚克力板,描绘网中的蝴蝶",
           "role": "plate",
           "zoom": true
         },
@@ -491,10 +741,18 @@
         },
         {
           "src": "Trap/IMG_2808.jpg",
-          "alt": "Trap, detail of the line work",
-          "alt_zh": "陷阱:细节",
+          "alt": "Trap, detail of the web and the butterfly pattern",
+          "alt_zh": "陷阱:网与蝴蝶纹样的细节",
           "role": "plate",
           "zoom": true
+        }
+      ],
+      "medium": "Woodcut print, silkscreen on plexiglass",
+      "medium_zh": "木刻版画,亚克力板丝网印刷",
+      "text": [
+        {
+          "en": "“Trap” is a captivating woodcut print that incorporates silkscreen printed plexiglass, creating a dynamic interplay of textures and light. The piece depicts a butterfly ensnared in a web, symbolizing themes of entrapment and vulnerability. The silkscreen print on the plexiglass adds depth and a subtle shading effect, enhancing the emotional intensity of the work. The juxtaposition of traditional woodcut techniques with the modern use of plexiglass invites viewers to reflect on the delicate balance between freedom and restraint, capturing a poignant moment that resonates with both fragility and strength.",
+          "zh": "《陷阱》是一件结合丝网印刷亚克力板的木刻版画,营造出肌理与光线之间生动的交织。画面描绘一只被困在网中的蝴蝶,象征着束缚与脆弱。亚克力板上的丝网印刷增添了纵深与微妙的明暗效果,加强了作品的情感张力。传统木刻技法与亚克力这一现代材料并置,邀请观者思考自由与束缚之间微妙的平衡,定格一个既脆弱又坚强、令人动容的瞬间。"
         }
       ]
     },
@@ -504,8 +762,8 @@
       "title_zh": "为你憔悴,终不悔",
       "cover": 0,
       "year": "2022",
-      "medium": "Risograph and screen print, mixed-media artbook",
-      "medium_zh": "孔版印刷与丝网印刷,综合材料艺术家书",
+      "medium": "Handmade artist book — Risograph, screen print and mixed media",
+      "medium_zh": "手工艺术家书——孔版印刷、丝网印刷与综合材料",
       "size": "11 × 17 in",
       "size_zh": "11 × 17 英寸",
       "images": [
@@ -545,6 +803,12 @@
           "alt_zh": "折页与绿色封面的近观",
           "role": "plate"
         }
+      ],
+      "text": [
+        {
+          "en": "This is a heartfelt quote from an ancient Chinese poem that speaks of unconditional love and devotion. This Risograph screen print, mixed media artwork, is presented in a unique 11x17 inch art book shaped like a cocoon, symbolizing both the fragility and warmth of love. The soft, delicate binding, created with fragile thread, mirrors the tender nature of the emotions conveyed in the poem. Every element of the book is designed to embody the essence of unconditional love—gentle, unwavering, and tender, inviting the viewer to connect deeply with the timeless sentiments of devotion and longing.",
+          "zh": "标题出自一首中国古诗中深情的诗句,诉说无条件的爱与奉献。这件结合孔版印刷(Risograph)、丝网印刷与综合材料的作品,以一本形似茧的 11×17 英寸艺术家书呈现,象征爱的脆弱与温暖。以纤细丝线完成的柔软装帧,映照诗中所传达情感的温柔。书中的每个元素都旨在体现无条件之爱的本质——温柔、坚定、细腻,邀请观者深深感受那份关于奉献与思念的永恒情怀。"
+        }
       ]
     },
     {
@@ -559,6 +823,12 @@
           "alt_zh": "渴求:装裱的多色凸版版画,人物肌肤上栖着飞蛾",
           "role": "plate",
           "zoom": true
+        }
+      ],
+      "text": [
+        {
+          "en": "A multi-colour print of a woman in profile, eyes closed, a single red line running from her eye. Moths settle along her ear, neck and shoulder; her clasped hands are bound in loose thread, set against deep blue and a red circle.",
+          "zh": "一幅多色版画:侧脸的女子闭着双眼,一道红线自眼中垂下。飞蛾停落在她的耳边、颈项与肩头;合握的双手被松散的丝线缠绕,背后是深蓝的底色与一轮红色的圆。"
         }
       ]
     },
@@ -575,6 +845,12 @@
           "role": "plate",
           "zoom": true
         }
+      ],
+      "text": [
+        {
+          "en": "A black-and-white print in which flame-like forms rise from below to meet a great patterned wing above, all rendered in fine white line against solid black.",
+          "zh": "一幅黑白版画:火焰般的形态自下方升起,与上方一片纹样繁复的巨大羽翼相遇,全部以细密的白线描绘在纯黑的底色之上。"
+        }
       ]
     },
     {
@@ -588,6 +864,12 @@
           "alt": "For her: nine flat-colour illustrations of figures on red and white grounds",
           "alt_zh": "给她:红与白底上的九幅平涂人物插画",
           "role": "plate"
+        }
+      ],
+      "text": [
+        {
+          "en": "A series of nine illustrations in flat colour. Each frames a single figure in a quiet, intimate pose—curled, resting, turning away—against bright red or white, with a small yellow-and-pink flower resting on the body.",
+          "zh": "一组九幅平涂插画。每一幅都框住一个人物安静而私密的姿态——蜷起、休憩、转身——衬以鲜红或纯白的底色,身上都停着一朵小小的黄粉色花。"
         }
       ]
     }

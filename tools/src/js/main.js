@@ -690,3 +690,33 @@ const cursorLabel = (() => {
     if (target) { target.style.viewTransitionName = 'hero-img'; e.viewTransition.finished.finally(() => { target.style.viewTransitionName = ''; }); }
   });
 })();
+
+
+/* ---------------------------------------------------------------------------
+   work text: on small screens, fold long descriptions so the images stay close
+   --------------------------------------------------------------------------- */
+(function descFold() {
+  const d = document.querySelector('.work-desc');
+  if (!d) return;
+  const mq = matchMedia('(max-width: 900px)');
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'desc-more mono';
+  const label = (open) => {
+    btn.innerHTML = open
+      ? '<span class="en">Show less ↑</span><span class="zh" lang="zh-Hans">收起 ↑</span>'
+      : '<span class="en">Read more ↓</span><span class="zh" lang="zh-Hans">展开全文 ↓</span>';
+    btn.setAttribute('aria-expanded', String(open));
+  };
+  const apply = () => {
+    d.classList.remove('is-clamped');
+    btn.remove();
+    if (!mq.matches || d.scrollHeight < 300) return;
+    d.classList.add('is-clamped');
+    d.after(btn);
+    label(false);
+  };
+  btn.addEventListener('click', () => label(!d.classList.toggle('is-clamped')));
+  apply();
+  mq.addEventListener('change', apply);
+})();
