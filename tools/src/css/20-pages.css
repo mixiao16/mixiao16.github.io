@@ -5,7 +5,7 @@
 .work-main{grid-column:1/-1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut)}
 .work-info{grid-column:1/span 4;position:sticky;top:calc(var(--head-h) + 5vh);align-self:start;display:flex;flex-direction:column;gap:2.2rem;padding-bottom:6vh}
 .work-no{color:var(--ink-2);display:flex;gap:1rem;align-items:center}
-.work-no b{font-weight:400;color:var(--seal)}
+.work-no b{font-weight:400;color:var(--ink)}
 .work-title{font:300 clamp(40px,5.4vw,96px)/.95 var(--f-serif);letter-spacing:-.025em;overflow-wrap:anywhere;hyphens:manual}
 .work-title.long{font-size:clamp(34px,4.1vw,70px)}
 html[data-lang="zh"] .work-title{font-family:var(--f-zh);letter-spacing:.06em;line-height:1.15}
@@ -82,7 +82,7 @@ html[data-lang="zh"] .fig figcaption span{font-family:var(--f-zh);font-size:13px
 .board-index::-webkit-scrollbar{display:none}
 .board-index li button{display:grid;grid-template-columns:2.2rem 1fr;text-align:left;width:100%;padding:.18rem 0;color:var(--ink-2);transition:color .25s,padding .35s var(--ease)}
 .board-index li button b{font:400 10.5px var(--f-mono);color:var(--ink-3);padding-top:.35em}
-.board-index li button:hover,.board-index li.is-lit button{color:var(--seal);padding-left:.5rem}
+.board-index li button:hover,.board-index li.is-lit button{color:var(--ink);padding-left:.5rem}
 html[data-lang="zh"] .board-index li button{font-size:14px;line-height:1.7}
 .board .frames{grid-template-columns:repeat(6,minmax(0,1fr))}
 
