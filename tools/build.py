@@ -60,7 +60,7 @@ def write_seal_svg():
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><symbol id="seal" viewBox="0 0 512 512">'
            '<rect x="20" y="20" width="472" height="472" rx="24" fill="none" stroke="currentColor" style="stroke-width:var(--seal-frame,24px)"/>'
            '<path d="%s" fill="currentColor" stroke="currentColor" stroke-linejoin="round" style="stroke-width:var(--seal-stroke,8px)"/>'
-           '</symbol><use href="#seal" style="color:#B23A2B"/></svg>\n') % SEAL_PATH
+           '</symbol><use href="#seal" style="color:#C8281C"/></svg>\n') % SEAL_PATH
     (ROOT / 'assets' / 'img' / 'ui' / 'seal.svg').write_text(svg)
 
 
@@ -159,7 +159,7 @@ def head(rel, title_en, title_zh, desc, path, og, is_home=False, ld=None, asset_
            '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">',
            '<title>%s</title>' % esc(t_en),
            '<meta name="description" content="%s">' % a(desc),
-           '<meta name="theme-color" content="#EFEAE0">',
+           '<meta name="theme-color" content="#F4F4F2">',
            '<meta name="color-scheme" content="light dark">',
            '<link rel="canonical" href="%s">' % a(canon),
            '<link rel="icon" href="%sassets/img/ui/favicon.svg" type="image/svg+xml">' % rel,

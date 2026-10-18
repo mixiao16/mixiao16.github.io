@@ -1,7 +1,7 @@
 /* ==========================================================================
    Yinghan Zhang — portfolio
-   Paper & ink. Palette taken from the Coffee Bean / Muted Mole / Toffee /
-   Oat Beige / Walnut family, with one seal-red accent.
+   Paper & ink. Neutral black / white / grey, with one bright vermilion accent;
+   the seal keeps its own cinnabar red.
    ========================================================================== */
 
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:300;font-display:swap;src:url(../fonts/cormorant-garamond-latin-300-normal.woff2) format("woff2")}
@@ -13,17 +13,18 @@
 @font-face{font-family:"DM Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/dm-mono-latin-400-normal.woff2) format("woff2")}
 
 :root{
-  --paper:#EFEAE0;
-  --paper-2:#E7E0D3;
-  --paper-3:#DACFBE;
-  --ink:#1E1D19;          /* Coffee Bean */
-  --ink-2:#685A4D;        /* Muted Mole  */
-  --ink-3:#977E68;        /* Toffee      */
-  --oat:#D1BFB1;          /* Oat Beige   */
-  --walnut:#2D1F16;       /* Walnut      */
-  --seal:#B23A2B;         /* vermilion seal */
-  --line:rgba(30,29,25,.16);
-  --shadow:0 1px 1px rgba(45,31,22,.10),0 12px 34px -8px rgba(45,31,22,.22);
+  --paper:#F4F4F2;
+  --paper-2:#E9E9E7;
+  --paper-3:#D5D5D3;
+  --ink:#141414;
+  --ink-2:#555555;
+  --ink-3:#8C8C8C;
+  --oat:#CFCFCF;
+  --walnut:#1F1F1F;
+  --seal:#E0301E;         /* bright vermilion accent */
+  --seal-ink:#C8281C;     /* cinnabar seal paste */
+  --line:rgba(20,20,20,.15);
+  --shadow:0 1px 1px rgba(0,0,0,.08),0 12px 34px -8px rgba(0,0,0,.2);
 
   --f-serif:"Cormorant Garamond","Noto Serif SC","Songti SC","STSong","Source Han Serif SC","SimSun",serif;
   --f-zh:"Noto Serif SC","Songti SC","STSong","Source Han Serif SC","SimSun",serif;
@@ -35,14 +36,15 @@
   color-scheme:light;
 }
 html[data-theme="ink"]{
-  --paper:#1C1B17;
-  --paper-2:#25231E;
-  --paper-3:#322F27;
-  --ink:#E9E0D2;
-  --ink-2:#B1A38E;
-  --ink-3:#8A7963;
-  --line:rgba(233,224,210,.17);
-  --seal:#D0594A;
+  --paper:#121212;
+  --paper-2:#1C1C1C;
+  --paper-3:#2A2A2A;
+  --ink:#EDEDED;
+  --ink-2:#A6A6A6;
+  --ink-3:#777777;
+  --line:rgba(237,237,237,.16);
+  --seal:#F2442F;
+  --seal-ink:#D8382A;
   --shadow:0 1px 1px rgba(0,0,0,.4),0 14px 40px -10px rgba(0,0,0,.7);
   color-scheme:dark;
 }
@@ -120,7 +122,7 @@ html[data-lang="zh"] .mono{letter-spacing:.14em;font-size:12px;text-transform:no
 .chrome.is-scrolled{background:color-mix(in srgb,var(--paper) 86%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom-color:var(--line)}
 .chrome.is-hidden{transform:translateY(-100%)}
 .brand{justify-self:start;display:flex;align-items:center;gap:.8em;white-space:nowrap}
-.seal{display:block;flex:none;color:var(--seal);overflow:visible}
+.seal{display:block;flex:none;color:var(--seal-ink);overflow:visible}
 .brand-seal{width:34px;height:34px;--seal-stroke:9px;--seal-frame:30px;transform:rotate(-2deg)}
 .where{justify-self:center;color:var(--ink-2)}
 .nav{justify-self:end;display:flex;align-items:center;gap:clamp(.9rem,2vw,2rem)}

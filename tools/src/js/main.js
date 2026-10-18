@@ -29,7 +29,7 @@ function applyTheme(t) {
   root.dataset.theme = t;
   store.set('theme', t);
   const m = $('meta[name="theme-color"]');
-  if (m) m.content = t === 'ink' ? '#1C1B17' : '#EFEAE0';
+  if (m) m.content = t === 'ink' ? '#121212' : '#F4F4F2';
   $$('[data-toggle-theme]').forEach((b) => b.setAttribute('aria-pressed', String(t === 'ink')));
   document.dispatchEvent(new CustomEvent('themechange', { detail: t }));
 }
@@ -135,7 +135,7 @@ applyTheme(root.dataset.theme || 'paper');
   const LO = 44; // sampling resolution for % measure
   let lo = null, loCtx = null, loMask = null, loMaskSum = 1;
 
-  const paperColor = () => getComputedStyle(root).getPropertyValue('--paper').trim() || '#EFEAE0';
+  const paperColor = () => getComputedStyle(root).getPropertyValue('--paper').trim() || '#F4F4F2';
 
   // a grainy brush: soft core + speckle, so repeated passes read like graphite frottage
   function makeBrush(size) {
@@ -186,7 +186,7 @@ applyTheme(root.dataset.theme || 'paper');
       const OFF = 20000, dark = root.dataset.theme === 'ink';
       ctx.save();
       ctx.shadowBlur = 7 * dpr;
-      ctx.shadowColor = dark ? 'rgba(0,0,0,.55)' : 'rgba(66,46,28,.22)';
+      ctx.shadowColor = dark ? 'rgba(0,0,0,.55)' : 'rgba(0,0,0,.2)';
       ctx.shadowOffsetX = OFF + 3.5 * dpr; ctx.shadowOffsetY = 3.5 * dpr;
       ctx.drawImage(mask, geo.x - OFF, geo.y, geo.w, geo.h);
       ctx.shadowColor = dark ? 'rgba(255,255,255,.07)' : 'rgba(255,255,255,.75)';
