@@ -42,8 +42,7 @@ DESC_EN = ("Portfolio of Yinghan Zhang, a Seattle-based stone artist and printma
            "printmaking, woodcut, drawing and collage.")
 
 # Silent Veins process: frames on the home page teaser and the work-page board
-TEASER_FRAMES = list(range(1, 15))
-TEASER_THREAD = '2,3,10,11,12,13,14'
+TEASER_FRAMES = [2, 3, 5, 7, 9, 10, 12, 14]   # home teaser: chosen by MiMi, no red thread
 BOARD_THREAD = '2,3,9,12,13,14,16,18'
 NOTE_FRAME = 12
 
@@ -320,23 +319,23 @@ def home_page():
     sv = WORKS[0]
     proc = sv['process']
     frames = []
-    for n in TEASER_FRAMES:
+    for k, n in enumerate(TEASER_FRAMES, 1):
         p = proc[n - 1]
         i = info(p['src'])
-        frames.append(f'''<figure class="frame"{' data-note' if n == NOTE_FRAME else ''}>
-  <span class="no mono">{num(n)}</span>
+        frames.append(f'''<figure class="frame">
+  <span class="no mono">{num(k)}</span>
   <a href="{work_href(rel, sv)}#process" aria-label="{a(p['caption'])}">{ph(i, rel, p['alt'], p['alt_zh'], '(max-width:900px) 33vw, 14vw')}</a>
   <figcaption>{bi(p['caption'], p['caption_zh'])}</figcaption>
 </figure>''')
     feature = f'''<section class="feature" id="process" aria-labelledby="process-h">
   <div class="feature-head">
-    <h2 class="sec-title rv" id="process-h"><small class="mono">{bi('From the studio', '工作室手记')} — {bi('Silent Veins', '静观')}</small>{bi('Follow the <em>red line</em>', '循着 <em>红线</em>', raw=True)}</h2>
+    <h2 class="sec-title rv" id="process-h">{bi('From the studio — <em>Silent Veins</em>', '工作室手记 — <em>静观</em>', raw=True)}</h2>
     <div class="rv" style="--d:.12s">
-      <p>{bi('Frames from the making of Silent Veins — from the cord and the table to the slow gathering of ink. Hover to light a frame; follow the thread.', '《静观》创作过程中的片段——从绳与案,到墨一点点聚拢。移动鼠标点亮画面,顺着红线看下去。')}</p>
+      <p>{bi('Frames from the making of Silent Veins — from the cord and the table to the slow gathering of ink.', '《静观》创作过程中的片段——从绳与案,到墨一点点聚拢。')}</p>
       <a class="cta mono" href="{work_href(rel, sv)}#process">{bi('See the full process', '查看完整过程')} <span aria-hidden="true">→</span></a>
     </div>
   </div>
-  <div class="frames" data-thread="{TEASER_THREAD}">
+  <div class="frames" data-thread="">
 {chr(10).join(frames)}
   </div>
 </section>'''
@@ -452,7 +451,7 @@ def work_page(idx):
         for n, p in enumerate(proc, 1):
             i = info(p['src'])
             items.append('<li><button type="button"><b>%s</b><span>%s</span></button></li>' % (num(n), bi(p['caption'], p['caption_zh'])))
-            frames.append(f'''<figure class="frame"{' data-note' if n == NOTE_FRAME else ''}>
+            frames.append(f'''<figure class="frame">
   <span class="no mono">{num(n)}</span>
   <button type="button" aria-label="{a(p['caption'])}" {lb_attrs(i, rel, p['caption'], p['caption_zh'])}>{ph(i, rel, p['alt'], p['alt_zh'], '(max-width:900px) 33vw, 15vw')}</button>
   <figcaption>{bi(p['caption'], p['caption_zh'])}</figcaption>
@@ -460,11 +459,11 @@ def work_page(idx):
         process_html = f'''<section class="process" id="process" aria-labelledby="process-h">
   <div class="process-head">
     <h2 class="sec-title rv" id="process-h"><small class="mono">{bi('Process', '创作过程')} — {len(proc)} {bi('frames', '帧')}</small>{bi('How the <em>ink</em> arrives', '墨,<em>如何到来</em>', raw=True)}</h2>
-    <p class="rv" style="--d:.12s">{bi('Click a frame to look closer. The red thread follows the moments that matter most.', '点击任一画面可细看。红线串起最关键的几个瞬间。')}</p>
+    <p class="rv" style="--d:.12s">{bi('Click a frame to look closer.', '点击任一画面可细看。')}</p>
   </div>
   <div class="board">
     <nav class="board-index" aria-label="Frames"><h3>{bi('Frames', '画面')}</h3><ol>{''.join(items)}</ol></nav>
-    <div class="frames" data-thread="{BOARD_THREAD}">
+    <div class="frames" data-thread="">
 {chr(10).join(frames)}
     </div>
   </div>

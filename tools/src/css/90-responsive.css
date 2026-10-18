@@ -55,6 +55,7 @@
   .feature{padding-left:var(--gut);padding-right:var(--gut)}
   .feature-head,.process-head{grid-template-columns:1fr}
   .feature-head .sec-title,.feature-head>div,.process-head .sec-title,.process-head p{grid-column:1/-1}
+  .feature .frames{grid-template-columns:repeat(2,minmax(0,1fr))}
   .frames,.board .frames{grid-template-columns:repeat(3,minmax(0,1fr))}
 
   .foot{grid-template-columns:1fr 1fr;padding-top:9vh}

@@ -139,6 +139,8 @@ html[data-lang="zh"] .index-list .t em{font-family:var(--f-serif);letter-spacing
 .feature{padding:13vh calc(var(--gut) + 12px) 12vh;border-top:1px solid var(--line);background:linear-gradient(var(--paper-2),var(--paper-2)) 0 0/100% 100% no-repeat}
 .feature-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gut);align-items:end;margin-bottom:7vh}
 .feature-head .sec-title{grid-column:1/span 7}
+.feature .sec-title em{white-space:nowrap}
+.feature .frames{grid-template-columns:repeat(4,minmax(0,1fr));gap:2.4rem clamp(12px,1.4vw,24px)}
 .feature-head>div{grid-column:9/span 4;color:var(--ink-2);font-size:.92em;line-height:1.5}
 .cta{display:inline-flex;align-items:center;gap:1rem;margin-top:1.4rem;padding:.9rem 0;border-bottom:1px solid var(--ink);transition:gap .4s var(--ease),color .3s,border-color .3s}
 .cta:hover{gap:1.8rem;color:var(--seal);border-color:var(--seal)}
