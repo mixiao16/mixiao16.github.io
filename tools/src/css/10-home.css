@@ -26,7 +26,7 @@ html.intro-on .intro{display:grid}
 .hero-name-ink{display:block;width:100%;height:auto;user-select:none}
 html[data-theme="ink"] .hero-name-ink{filter:invert(1)}
 /* English name sits in the torn gap of the ink characters (gap = 49%–57.5% of the image height) */
-.hero-name-en{font-family:"IBM Plex Mono",var(--f-mono);font-weight:200;position:absolute;left:0;right:0;top:49%;height:8.5%;display:flex;align-items:center;justify-content:center;
+.hero-name-en{font-family:var(--f-mono);font-weight:200;position:absolute;left:0;right:0;top:49%;height:8.5%;display:flex;align-items:center;justify-content:center;
   font-size:clamp(11px,1.2vw,19px);letter-spacing:.6em;padding-left:.6em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
 .hero-stage{
   grid-column:7/span 5;grid-row:1/span 3;justify-self:center;align-self:center;
@@ -98,7 +98,7 @@ html[data-lang="zh"] .plate-title{font-style:normal;font-weight:300;letter-spaci
    radial-gradient(circle,currentColor 0 1.1px,transparent 1.6px) -4.5px 100%/9px 6px repeat-x,
    radial-gradient(circle,var(--ink) 0 2.3px,transparent 2.9px) -22.5px 50%/45px 12px repeat-x}
 .ruler-ticks{position:absolute;left:0;right:0;bottom:-6px;display:flex;justify-content:space-between}
-.ruler-ticks button{font:400 10px var(--f-mono);letter-spacing:.06em;padding:4px 2px;color:var(--ink-3);transition:color .3s}
+.ruler-ticks button{font:300 10px var(--f-mono);letter-spacing:.06em;padding:4px 2px;color:var(--ink-3);transition:color .3s}
 .ruler-ticks button:hover,.ruler-ticks button[aria-current="true"]{color:var(--ink)}
 .ruler-mark{position:absolute;left:0;bottom:12px;width:1.5px;height:26px;background:var(--ink);transform:translateX(calc(var(--p,0) * var(--w,0px)));pointer-events:none}
 .ruler-mark::before{content:"";position:absolute;top:-1px;left:-4px;border:4.75px solid transparent;border-top:7px solid var(--ink);border-bottom:0}
