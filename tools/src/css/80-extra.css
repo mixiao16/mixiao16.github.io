@@ -14,7 +14,6 @@ html[data-lang="zh"] :is(.sec-title,.foot-mark,.contact h1,.nf h1,.quote-en,.wor
 html[data-lang="zh"] .nf h1{font-family:var(--f-zh);letter-spacing:.06em}
 html[data-lang="zh"] .sec-title{font-family:var(--f-zh);font-weight:300;letter-spacing:.04em;line-height:1.1}
 html[data-lang="zh"] .foot-mark{font-family:var(--f-zh);letter-spacing:.02em}
-html[data-lang="zh"] .hero-name{font-family:var(--f-zh);font-weight:300;letter-spacing:0}
 
 /* cursor label text (set by data-kind) */
 .cursor-label[data-kind="view"]::before{content:"View"}
