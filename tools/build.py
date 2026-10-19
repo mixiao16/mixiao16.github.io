@@ -299,7 +299,6 @@ def home_page():
     <div class="plates-track" tabindex="0" role="region" aria-label="Works — scroll sideways">
 {chr(10).join(plates)}
     </div>
-    <div class="ruler"><div class="ruler-scale"></div><div class="ruler-ticks"></div><div class="ruler-mark"></div></div>
   </div>
   <div class="index" id="index" hidden>
     <ol class="index-list">
