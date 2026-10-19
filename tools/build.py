@@ -398,8 +398,6 @@ def work_page(idx):
     links = []
     if w.get('video', {}).get('youtube'):
         links.append('<a class="mono" href="https://youtu.be/%s" target="_blank" rel="noopener">%s</a>' % (w['video']['youtube'], bi('Watch the video ↗', '观看影像 ↗')))
-    if w.get('process'):
-        links.append('<a class="mono" href="#process">%s</a>' % bi('Process ↓', '创作过程 ↓'))
     info_html = f'''<aside class="work-info{' has-text' if w.get('text') else ''}">
     <p class="work-no mono"><b>{num(idx + 1)}</b><span>/ {num(N)}</span><span class="fig-count">{count_label(len(w['images']))}</span></p>
     <h1 class="work-title{' long' if long else ''}"><span class="en">{esc(w['title'])}<span class="work-alt zhs" lang="zh-Hans">{esc(w['title_zh'])}</span></span><span class="zh" lang="zh-Hans">{esc(w['title_zh']).replace('，', '，<br>')}<span class="work-alt">{esc(w['title'])}</span></span></h1>
@@ -455,7 +453,7 @@ def work_page(idx):
 </figure>''')
         process_html = f'''<section class="process" id="process" aria-labelledby="process-h">
   <div class="process-head">
-    <h2 class="sec-title rv" id="process-h"><small class="mono">{bi('Process', '创作过程')} — {len(proc)} {bi('frames', '帧')}</small>{bi('How the <em>ink</em> arrives', '墨,<em>如何到来</em>', raw=True)}</h2>
+    <h2 class="sec-title rv" id="process-h"><small class="mono">{bi('Behind the scene', '幕后')} — {len(proc)} {bi('frames', '帧')}</small>{bi('How the <em>ink</em> arrives', '墨,<em>如何到来</em>', raw=True)}</h2>
     <p class="rv" style="--d:.12s">{bi('Click a frame to look closer.', '点击任一画面可细看。')}</p>
   </div>
   <div class="board">
