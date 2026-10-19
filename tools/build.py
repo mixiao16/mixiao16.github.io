@@ -214,7 +214,6 @@ def footer(rel):
     if SITE.get('email'):
         mail = '<a href="mailto:%s">%s</a>' % (a(SITE['email']), esc(SITE['email']))
     return f'''<footer class="foot">
-  <div class="foot-mark" aria-hidden="true"><span class="en">Yinghan <em>Zhang</em></span><span class="zh" lang="zh-Hans">张<em>樱瀚</em></span></div>
   <div class="foot-col mono"><span>{bi(SITE['tagline'], SITE['tagline_zh'])}</span></div>
   <div class="foot-col c mono"><a href="{home}#works">{bi('Work', '作品')}</a><a href="{rel}about/">{bi('About', '关于')}</a><a href="{rel}contact/">{bi('Contact', '联系')}</a></div>
   <div class="foot-col r mono"><a href="{a(ig)}" target="_blank" rel="noopener">Instagram {esc(handle)} ↗</a>{mail}<span class="dim">© {YEAR} {bi(SITE['name'], SITE['name_zh'])}</span></div>

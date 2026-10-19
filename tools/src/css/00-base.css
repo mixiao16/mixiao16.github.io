@@ -134,7 +134,7 @@ html[data-lang="zh"] .mono{letter-spacing:.14em;font-size:12px;text-transform:no
 .menu-btn{display:none}
 
 .foot{
-  position:relative;padding:12vh calc(var(--gut) + 12px) 5vh;border-top:1px solid var(--line);margin-top:6vh;
+  position:relative;padding:6vh calc(var(--gut) + 12px) 5vh;border-top:1px solid var(--line);margin-top:6vh;
   display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gut);align-items:end;
 }
 .foot-mark{grid-column:1/-1;font:300 clamp(54px,13.5vw,240px)/.85 var(--f-serif);letter-spacing:-.03em;color:var(--ink);margin-bottom:6vh;white-space:nowrap}

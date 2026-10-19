@@ -60,7 +60,7 @@
   .feature .frames{grid-template-columns:repeat(2,minmax(0,1fr))}
   .frames,.board .frames{grid-template-columns:repeat(3,minmax(0,1fr))}
 
-  .foot{grid-template-columns:1fr 1fr;padding-top:9vh}
+  .foot{grid-template-columns:1fr 1fr;padding-top:5vh}
   .foot-col,.foot-col.c,.foot-col.r{grid-column:span 1;align-items:flex-start;text-align:left}
   .foot-col.c{grid-column:1/-1;order:3}
 
