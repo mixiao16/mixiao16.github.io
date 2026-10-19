@@ -11,6 +11,7 @@
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:"DM Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../fonts/dm-mono-latin-300-normal.woff2) format("woff2")}
 @font-face{font-family:"DM Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/dm-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:200;font-display:swap;src:url(../fonts/ibm-plex-mono-latin-200-normal.woff2) format("woff2")}
 
 :root{
   --paper:#F4F4F2;

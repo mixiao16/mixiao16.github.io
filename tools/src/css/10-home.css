@@ -26,7 +26,7 @@ html.intro-on .intro{display:grid}
 .hero-name-ink{display:block;width:100%;height:auto;user-select:none}
 html[data-theme="ink"] .hero-name-ink{filter:invert(1)}
 /* English name sits in the torn gap of the ink characters (gap = 49%–57.5% of the image height) */
-.hero-name-en{position:absolute;left:0;right:0;top:49%;height:8.5%;display:flex;align-items:center;justify-content:center;
+.hero-name-en{font-family:"IBM Plex Mono",var(--f-mono);font-weight:200;position:absolute;left:0;right:0;top:49%;height:8.5%;display:flex;align-items:center;justify-content:center;
   font-size:clamp(11px,1.2vw,19px);letter-spacing:.6em;padding-left:.6em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
 .hero-stage{
   grid-column:7/span 5;grid-row:1/span 3;justify-self:center;align-self:center;
