@@ -27,7 +27,7 @@ function applyLang(l) {
 }
 function applyTheme(t) {
   root.dataset.theme = t;
-  store.set('theme', t);
+  store.set('tone', t);
   const m = $('meta[name="theme-color"]');
   if (m) m.content = t === 'ink' ? '#121212' : '#F4F4F2';
   $$('[data-toggle-theme]').forEach((b) => b.setAttribute('aria-pressed', String(t === 'ink')));
@@ -36,7 +36,7 @@ function applyTheme(t) {
 $$('[data-toggle-lang]').forEach((b) => b.addEventListener('click', () => applyLang(lang() === 'en' ? 'zh' : 'en')));
 $$('[data-toggle-theme]').forEach((b) => b.addEventListener('click', () => applyTheme(root.dataset.theme === 'ink' ? 'paper' : 'ink')));
 applyLang(lang());
-applyTheme(root.dataset.theme || 'paper');
+applyTheme(root.dataset.theme || 'ink');
 
 /* ------------------------------------------------------------------ */
 /* Chrome: header, mobile menu, clock                                  */

@@ -144,8 +144,8 @@ ARROW_R = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/><
 
 def prepaint(is_home):
     js = ("(function(){var d=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}},"
-          "l=g('lang'),t=g('theme');l=(l==='zh')?'zh':'en';d.dataset.lang=l;d.lang=l==='zh'?'zh-Hans':'en';"
-          "d.dataset.theme=t==='ink'?'ink':'paper';")
+          "l=g('lang'),t=g('tone');l=(l==='zh')?'zh':'en';d.dataset.lang=l;d.lang=l==='zh'?'zh-Hans':'en';"
+          "d.dataset.theme=t==='paper'?'paper':'ink';")
     if is_home:
         js += ("try{if(!sessionStorage.getItem('introSeen')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)"
                "{d.classList.add('intro-on');setTimeout(function(){d.classList.remove('intro-on')},4500)}}catch(e){}")
@@ -156,12 +156,12 @@ def head(rel, title_en, title_zh, desc, path, og, is_home=False, ld=None, asset_
     canon = DOMAIN + '/' + path
     t_en = title_en
     out = ['<!doctype html>',
-           '<html lang="en" data-lang="en" data-theme="paper" data-title-en="%s" data-title-zh="%s">' % (a(t_en), a(title_zh)),
+           '<html lang="en" data-lang="en" data-theme="ink" data-title-en="%s" data-title-zh="%s">' % (a(t_en), a(title_zh)),
            '<head>', '<meta charset="utf-8">',
            '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">',
            '<title>%s</title>' % esc(t_en),
            '<meta name="description" content="%s">' % a(desc),
-           '<meta name="theme-color" content="#F4F4F2">',
+           '<meta name="theme-color" content="#121212">',
            '<meta name="color-scheme" content="light dark">',
            '<link rel="canonical" href="%s">' % a(canon),
            '<link rel="icon" href="%sassets/img/ui/favicon.svg" type="image/svg+xml">' % rel,
@@ -201,7 +201,7 @@ def chrome(rel, current):
     <span class="sep" aria-hidden="true"></span>
     <span class="tools">
       <button type="button" class="tg" data-toggle-lang aria-label="Switch language / 切换语言">{bi('中文', 'EN')}</button>
-      <button type="button" class="tg" data-toggle-theme aria-pressed="false" aria-label="Toggle paper / ink theme"><span class="th-ink">{bi('Ink', '墨')}</span><span class="th-paper">{bi('Paper', '纸')}</span></button>
+      <button type="button" class="tg" data-toggle-theme aria-pressed="true" aria-label="Toggle paper / ink theme"><span class="th-ink">{bi('Ink', '墨')}</span><span class="th-paper">{bi('Paper', '纸')}</span></button>
     </span>
   </nav>
   <button type="button" class="menu-btn mono" aria-expanded="false" aria-controls="nav"><span>{bi('Menu', '菜单')}</span><i></i></button>
