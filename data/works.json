@@ -471,36 +471,31 @@
       }
     },
     {
-      "slug": "spirit-of-stone",
-      "title": "Spirit of Stone",
-      "title_zh": "石魂",
+      "slug": "shape-of-stone",
+      "title": "Shape of Stone",
+      "title_zh": "石之形",
       "cover": 0,
       "images": [
         {
-          "src": "Spirit of Stone/IMG_8889.jpg",
-          "alt": "Spirit of Stone: a tall spine-like form screen-printed in red on clear acetate, hanging in a historic gallery",
-          "alt_zh": "石魂:红色丝网印在透明醋酸胶片上的脊柱状形态,悬于历史展厅中",
-          "role": "plate"
-        },
-        {
-          "src": "Spirit of Stone/IMG_8890.jpg",
-          "alt": "Close view of the printed acetate and its reflection",
-          "alt_zh": "印有图案的醋酸胶片与倒影近观",
-          "role": "plate"
-        },
-        {
-          "src": "Spirit of Stone/IMG_8862.jpg",
-          "alt": "The installation seen through the gallery doorway at night",
-          "alt_zh": "夜间透过展厅门洞看见的装置",
-          "role": "plate"
+          "src": "Shape of Stone/Zhang_Yinghan_04.jpg",
+          "alt": "Shape of Stone: a repeated grid of printed stone forms, framed",
+          "alt_zh": "石之形:石形重复排列的版画,装裱展出",
+          "role": "plate",
+          "zoom": true
         }
       ],
-      "medium": "Screen print on clear acetate roll",
-      "medium_zh": "透明醋酸胶片卷上的丝网印刷",
+      "local_video": {
+        "src": "shape-of-stone.mp4",
+        "poster": "shape-of-stone-poster.webp",
+        "caption": "Shape of Stone, video",
+        "caption_zh": "《石之形》影像"
+      },
+      "medium": "Mokuhanga print",
+      "medium_zh": "水印木刻(Mokuhanga)",
       "text": [
         {
-          "en": "A screen-printed work on clear acetate, creating a floating spine-like form of the scholar’s stone. Representing the traditional Chinese spirit, the scholar’s stone embodies toughness and strength, standing as a symbol of resilience and cultural heritage.",
-          "zh": "一件印在透明醋酸胶片上的丝网版画,构成一个悬浮的、如脊柱般的文人石形态。文人石代表着中国传统精神,体现坚韧与力量,是韧性与文化传承的象征。"
+          "en": "This work captures the fluidity and movement inherent in stone, an element often perceived as static and unyielding. Through the multilayered technique of mokuhanga printing, the piece evokes the visual sensation of stone flowing like water, revealing its dynamic and ever-changing nature. The entire composition is formed by combining multiple identical prints, emphasizing repetition and subtle variations to mirror the poetic essence of scholar’s stones (gongshi). In Chinese tradition, these revered stones are not merely objects of admiration but embodiments of natural transformation, shaped by wind, water, and time. Shape of Stone presents an alternative perspective—one that highlights the softness within the hard, the fluidity within the solid, much like a poem capturing the silent yet profound passage of time.",
+          "zh": "石头常被视为静止、坚硬之物,这件作品却捕捉了它内在的流动与运动。借由多层套印的水印木刻技法,作品唤起石头如水般流动的视觉感受,显露出它灵动、变化不息的本性。整幅画面由多张相同的版画组合而成,以重复与细微的差异,映照文人石(供石)的诗意本质。在中国传统中,这些备受尊崇的石头不仅是赏玩之物,更是自然变化的化身,由风、水与时间塑造而成。《石之形》提供了另一种视角——凸显刚中之柔、固中之流,犹如一首诗,捕捉时间无声而深远的流逝。"
         }
       ]
     },
@@ -660,31 +655,36 @@
       }
     },
     {
-      "slug": "shape-of-stone",
-      "title": "Shape of Stone",
-      "title_zh": "石之形",
+      "slug": "spirit-of-stone",
+      "title": "Spirit of Stone",
+      "title_zh": "石魂",
       "cover": 0,
       "images": [
         {
-          "src": "Shape of Stone/Zhang_Yinghan_04.jpg",
-          "alt": "Shape of Stone: a repeated grid of printed stone forms, framed",
-          "alt_zh": "石之形:石形重复排列的版画,装裱展出",
-          "role": "plate",
-          "zoom": true
+          "src": "Spirit of Stone/IMG_8889.jpg",
+          "alt": "Spirit of Stone: a tall spine-like form screen-printed in red on clear acetate, hanging in a historic gallery",
+          "alt_zh": "石魂:红色丝网印在透明醋酸胶片上的脊柱状形态,悬于历史展厅中",
+          "role": "plate"
+        },
+        {
+          "src": "Spirit of Stone/IMG_8890.jpg",
+          "alt": "Close view of the printed acetate and its reflection",
+          "alt_zh": "印有图案的醋酸胶片与倒影近观",
+          "role": "plate"
+        },
+        {
+          "src": "Spirit of Stone/IMG_8862.jpg",
+          "alt": "The installation seen through the gallery doorway at night",
+          "alt_zh": "夜间透过展厅门洞看见的装置",
+          "role": "plate"
         }
       ],
-      "local_video": {
-        "src": "shape-of-stone.mp4",
-        "poster": "shape-of-stone-poster.webp",
-        "caption": "Shape of Stone, video",
-        "caption_zh": "《石之形》影像"
-      },
-      "medium": "Mokuhanga print",
-      "medium_zh": "水印木刻(Mokuhanga)",
+      "medium": "Screen print on clear acetate roll",
+      "medium_zh": "透明醋酸胶片卷上的丝网印刷",
       "text": [
         {
-          "en": "This work captures the fluidity and movement inherent in stone, an element often perceived as static and unyielding. Through the multilayered technique of mokuhanga printing, the piece evokes the visual sensation of stone flowing like water, revealing its dynamic and ever-changing nature. The entire composition is formed by combining multiple identical prints, emphasizing repetition and subtle variations to mirror the poetic essence of scholar’s stones (gongshi). In Chinese tradition, these revered stones are not merely objects of admiration but embodiments of natural transformation, shaped by wind, water, and time. Shape of Stone presents an alternative perspective—one that highlights the softness within the hard, the fluidity within the solid, much like a poem capturing the silent yet profound passage of time.",
-          "zh": "石头常被视为静止、坚硬之物,这件作品却捕捉了它内在的流动与运动。借由多层套印的水印木刻技法,作品唤起石头如水般流动的视觉感受,显露出它灵动、变化不息的本性。整幅画面由多张相同的版画组合而成,以重复与细微的差异,映照文人石(供石)的诗意本质。在中国传统中,这些备受尊崇的石头不仅是赏玩之物,更是自然变化的化身,由风、水与时间塑造而成。《石之形》提供了另一种视角——凸显刚中之柔、固中之流,犹如一首诗,捕捉时间无声而深远的流逝。"
+          "en": "A screen-printed work on clear acetate, creating a floating spine-like form of the scholar’s stone. Representing the traditional Chinese spirit, the scholar’s stone embodies toughness and strength, standing as a symbol of resilience and cultural heritage.",
+          "zh": "一件印在透明醋酸胶片上的丝网版画,构成一个悬浮的、如脊柱般的文人石形态。文人石代表着中国传统精神,体现坚韧与力量,是韧性与文化传承的象征。"
         }
       ]
     },
@@ -708,50 +708,6 @@
         {
           "en": "A rubbing of a peach-shaped stone, framed with mokuhanga. In Chinese culture, the peach symbolizes longevity and carries wishes for luck and happiness. This work honors the stone’s form and cultural significance, blending traditional techniques with symbolic meaning.",
           "zh": "一块桃形石头的拓印,四周以水印木刻作框。在中国文化中,桃象征长寿,寄寓着对好运与幸福的祝愿。这件作品致敬这块石头的形态与文化意义,把传统技法与象征意涵融为一体。"
-        }
-      ]
-    },
-    {
-      "slug": "trap",
-      "title": "Trap",
-      "title_zh": "陷阱",
-      "cover": 0,
-      "images": [
-        {
-          "src": "Trap/IMG_2839.jpg",
-          "alt": "Trap: two framed panels, woodcut and silkscreened plexiglass showing a butterfly caught in a web",
-          "alt_zh": "陷阱:两幅装框作品,木刻与丝网印刷亚克力板,描绘网中的蝴蝶",
-          "role": "plate",
-          "zoom": true
-        },
-        {
-          "src": "Trap/IMG_2828.jpg",
-          "alt": "Trap, angled view of the panels",
-          "alt_zh": "陷阱:斜视",
-          "role": "plate",
-          "zoom": true
-        },
-        {
-          "src": "Trap/IMG_2814.jpg",
-          "alt": "Trap, close angled view",
-          "alt_zh": "陷阱:近斜视",
-          "role": "plate",
-          "zoom": true
-        },
-        {
-          "src": "Trap/IMG_2808.jpg",
-          "alt": "Trap, detail of the web and the butterfly pattern",
-          "alt_zh": "陷阱:网与蝴蝶纹样的细节",
-          "role": "plate",
-          "zoom": true
-        }
-      ],
-      "medium": "Woodcut print, silkscreen on plexiglass",
-      "medium_zh": "木刻版画,亚克力板丝网印刷",
-      "text": [
-        {
-          "en": "“Trap” is a captivating woodcut print that incorporates silkscreen printed plexiglass, creating a dynamic interplay of textures and light. The piece depicts a butterfly ensnared in a web, symbolizing themes of entrapment and vulnerability. The silkscreen print on the plexiglass adds depth and a subtle shading effect, enhancing the emotional intensity of the work. The juxtaposition of traditional woodcut techniques with the modern use of plexiglass invites viewers to reflect on the delicate balance between freedom and restraint, capturing a poignant moment that resonates with both fragility and strength.",
-          "zh": "《陷阱》是一件结合丝网印刷亚克力板的木刻版画,营造出肌理与光线之间生动的交织。画面描绘一只被困在网中的蝴蝶,象征着束缚与脆弱。亚克力板上的丝网印刷增添了纵深与微妙的明暗效果,加强了作品的情感张力。传统木刻技法与亚克力这一现代材料并置,邀请观者思考自由与束缚之间微妙的平衡,定格一个既脆弱又坚强、令人动容的瞬间。"
         }
       ]
     },
@@ -807,6 +763,50 @@
         {
           "en": "This is a heartfelt quote from an ancient Chinese poem that speaks of unconditional love and devotion. This Risograph screen print, mixed media artwork, is presented in a unique 11x17 inch art book shaped like a cocoon, symbolizing both the fragility and warmth of love. The soft, delicate binding, created with fragile thread, mirrors the tender nature of the emotions conveyed in the poem. Every element of the book is designed to embody the essence of unconditional love—gentle, unwavering, and tender, inviting the viewer to connect deeply with the timeless sentiments of devotion and longing.",
           "zh": "标题出自一首中国古诗中深情的诗句,诉说无条件的爱与奉献。这件结合孔版印刷(Risograph)、丝网印刷与综合材料的作品,以一本形似茧的 11×17 英寸艺术家书呈现,象征爱的脆弱与温暖。以纤细丝线完成的柔软装帧,映照诗中所传达情感的温柔。书中的每个元素都旨在体现无条件之爱的本质——温柔、坚定、细腻,邀请观者深深感受那份关于奉献与思念的永恒情怀。"
+        }
+      ]
+    },
+    {
+      "slug": "trap",
+      "title": "Trap",
+      "title_zh": "陷阱",
+      "cover": 0,
+      "images": [
+        {
+          "src": "Trap/IMG_2839.jpg",
+          "alt": "Trap: two framed panels, woodcut and silkscreened plexiglass showing a butterfly caught in a web",
+          "alt_zh": "陷阱:两幅装框作品,木刻与丝网印刷亚克力板,描绘网中的蝴蝶",
+          "role": "plate",
+          "zoom": true
+        },
+        {
+          "src": "Trap/IMG_2828.jpg",
+          "alt": "Trap, angled view of the panels",
+          "alt_zh": "陷阱:斜视",
+          "role": "plate",
+          "zoom": true
+        },
+        {
+          "src": "Trap/IMG_2814.jpg",
+          "alt": "Trap, close angled view",
+          "alt_zh": "陷阱:近斜视",
+          "role": "plate",
+          "zoom": true
+        },
+        {
+          "src": "Trap/IMG_2808.jpg",
+          "alt": "Trap, detail of the web and the butterfly pattern",
+          "alt_zh": "陷阱:网与蝴蝶纹样的细节",
+          "role": "plate",
+          "zoom": true
+        }
+      ],
+      "medium": "Woodcut print, silkscreen on plexiglass",
+      "medium_zh": "木刻版画,亚克力板丝网印刷",
+      "text": [
+        {
+          "en": "“Trap” is a captivating woodcut print that incorporates silkscreen printed plexiglass, creating a dynamic interplay of textures and light. The piece depicts a butterfly ensnared in a web, symbolizing themes of entrapment and vulnerability. The silkscreen print on the plexiglass adds depth and a subtle shading effect, enhancing the emotional intensity of the work. The juxtaposition of traditional woodcut techniques with the modern use of plexiglass invites viewers to reflect on the delicate balance between freedom and restraint, capturing a poignant moment that resonates with both fragility and strength.",
+          "zh": "《陷阱》是一件结合丝网印刷亚克力板的木刻版画,营造出肌理与光线之间生动的交织。画面描绘一只被困在网中的蝴蝶,象征着束缚与脆弱。亚克力板上的丝网印刷增添了纵深与微妙的明暗效果,加强了作品的情感张力。传统木刻技法与亚克力这一现代材料并置,邀请观者思考自由与束缚之间微妙的平衡,定格一个既脆弱又坚强、令人动容的瞬间。"
         }
       ]
     },
