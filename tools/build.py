@@ -402,7 +402,7 @@ def work_page(idx):
         links.append('<a class="mono" href="#process">%s</a>' % bi('Process ↓', '创作过程 ↓'))
     info_html = f'''<aside class="work-info{' has-text' if w.get('text') else ''}">
     <p class="work-no mono"><b>{num(idx + 1)}</b><span>/ {num(N)}</span><span class="fig-count">{count_label(len(w['images']))}</span></p>
-    <h1 class="work-title{' long' if long else ''}"><span class="en">{esc(w['title'])}<span class="work-alt zhs" lang="zh-Hans">{esc(w['title_zh'])}</span></span><span class="zh" lang="zh-Hans">{esc(w['title_zh'])}<span class="work-alt">{esc(w['title'])}</span></span></h1>
+    <h1 class="work-title{' long' if long else ''}"><span class="en">{esc(w['title'])}<span class="work-alt zhs" lang="zh-Hans">{esc(w['title_zh'])}</span></span><span class="zh" lang="zh-Hans">{esc(w['title_zh']).replace('，', '，<br>')}<span class="work-alt">{esc(w['title'])}</span></span></h1>
     {meta_html}
     {desc_html}
     {('<div class="work-links">' + ''.join(links) + '</div>') if links else ''}
