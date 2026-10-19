@@ -48,24 +48,25 @@ NOTE_FRAME = 12
 
 
 # --------------------------------------------------------------------------- seal
-# 「張櫻瀚印」 in small-seal script, 朱文 (red characters, red frame). Glyphs from the CNS11643
-# 全字庫說文解字 font (Taiwan, Open Government Data License); 櫻 = 木+嬰 and 瀚 = 水+翰 are composed
-# the way seal carvers do, since neither character is in the Shuowen. Path: tools/src/seal-path.txt.
+# MiMi's own hand-drawn seal (tools/src/seal-original.jpg), traced to a vector with potrace.
+# Path: tools/src/seal-path.txt, in potrace units; SEAL_TF maps it into a 580 x 770 box.
 SEAL_PATH = (ROOT / 'tools' / 'src' / 'seal-path.txt').read_text().strip()
 SEAL_V = hashlib.md5(SEAL_PATH.encode()).hexdigest()[:8]
+SEAL_VB = '0 0 580 770'
+SEAL_TF = 'translate(0,770) scale(0.125,-0.125)'
 
 
 def write_seal_svg():
-    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><symbol id="seal" viewBox="0 0 512 512">'
-           '<rect x="20" y="20" width="472" height="472" rx="24" fill="none" stroke="currentColor" style="stroke-width:var(--seal-frame,24px)"/>'
-           '<path d="%s" fill="currentColor" stroke="currentColor" stroke-linejoin="round" style="stroke-width:var(--seal-stroke,8px)"/>'
-           '</symbol><use href="#seal" style="color:#C8281C"/></svg>\n') % SEAL_PATH
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="%s"><symbol id="seal" viewBox="%s">'
+           '<g transform="%s"><path d="%s" fill="currentColor" stroke="currentColor" stroke-linejoin="round" '
+           'style="stroke-width:var(--seal-stroke,0)"/></g>'
+           '</symbol><use href="#seal" style="color:#C8281C"/></svg>\n') % (SEAL_VB, SEAL_VB, SEAL_TF, SEAL_PATH)
     (ROOT / 'assets' / 'img' / 'ui' / 'seal.svg').write_text(svg)
 
 
 def seal_svg(rel, cls):
-    return ('<svg class="seal %s" viewBox="0 0 512 512" aria-hidden="true" focusable="false">'
-            '<use href="%sassets/img/ui/seal.svg?v=%s#seal"/></svg>') % (cls, rel, SEAL_V)
+    return ('<svg class="seal %s" viewBox="%s" aria-hidden="true" focusable="false">'
+            '<use href="%sassets/img/ui/seal.svg?v=%s#seal"/></svg>') % (cls, SEAL_VB, rel, SEAL_V)
 
 
 # --------------------------------------------------------------------------- helpers
@@ -242,7 +243,7 @@ def home_page():
     # --- hero
     hero = f'''<section class="hero" id="top" aria-label="Introduction">
   <p class="hero-kicker mono"><span>{bi(SITE['tagline'], SITE['tagline_zh'])}</span></p>
-  <h1 class="hero-name" aria-label="{a(SITE['name'])}"><span><span class="en">Yinghan</span><span class="zh" lang="zh-Hans">张</span></span><span><span class="en">Zhang</span><span class="zh" lang="zh-Hans">樱瀚</span></span></h1>
+  <h1 class="hero-name" aria-label="Zhang Yinghan 张樱瀚"><img class="hero-name-ink" src="assets/img/ui/name-ink-1600.webp" srcset="assets/img/ui/name-ink-900.webp 900w, assets/img/ui/name-ink-1600.webp 1600w" sizes="(max-width:900px) 92vw, 52vw" width="1669" height="810" alt="" fetchpriority="high" draggable="false"><span class="hero-name-en mono" aria-hidden="true">Zhang Yinghan</span></h1>
   <div class="hero-stage" id="stage">
     <img class="hero-stone" src="assets/img/ui/stone-1500.webp" srcset="assets/img/ui/stone-760.webp 760w, assets/img/ui/stone-1500.webp 1500w" sizes="(max-width:900px) 70vw, 36vw" width="1001" height="1500" alt="A full-shape rubbing of a scholar’s stone" data-alt-en="A full-shape rubbing of a scholar’s stone" data-alt-zh="一块文人石的全形拓" fetchpriority="high" draggable="false">
     <canvas id="rub" data-mask="assets/img/ui/stone-mask.png" aria-hidden="true"></canvas>

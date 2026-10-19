@@ -31,9 +31,10 @@
   /* hero */
   .hero{grid-template-rows:auto auto auto auto;min-height:100svh;padding-bottom:3svh}
   .hero-kicker{grid-column:1/-1;grid-row:1;padding-left:0}
-  .hero-name{grid-column:1/-1;grid-row:2;font-size:clamp(64px,22vw,150px);align-self:start;margin-top:3svh}
+  .hero-name{grid-column:1/-1;grid-row:2;align-self:start;width:100%;margin:calc(8svh + 26px) 0 0 -2%}
+  .hero-name-en{font-size:clamp(9px,2.6vw,14px);letter-spacing:.45em;padding-left:.45em}
   .hero-stage{grid-column:1/-1;grid-row:3;height:min(54svh,520px);margin-top:-5svh}
-  .hero-seal{top:calc(var(--head-h) + 11svh);width:48px;height:48px;--seal-stroke:8px;--seal-frame:28px}
+  .hero-seal{top:calc(var(--head-h) + 11svh);width:45px;height:60px;--seal-stroke:50}
   .hero-foot{grid-row:4;padding-left:0;padding-right:0}
   .scroll-cue i{height:30px}
 

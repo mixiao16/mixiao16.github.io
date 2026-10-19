@@ -48,13 +48,13 @@ def grain(img):
 
 
 def seal(base, x, y, s=64):
-    """Paste the site seal 「張櫻瀚印」 (tools/src/seal-path.txt), rendered with cairosvg."""
+    """Paste MiMi's hand-drawn seal (tools/src/seal-path.txt, traced), s = height in px."""
     import cairosvg
     path = (ROOT / 'tools/src/seal-path.txt').read_text().strip()
-    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="%d" height="%d">'
-           '<rect x="20" y="20" width="472" height="472" rx="24" fill="none" stroke="#C8281C" stroke-width="28"/>'
-           '<path d="%s" fill="#C8281C" stroke="#C8281C" stroke-width="10" stroke-linejoin="round"/></svg>') % (s * 2, s * 2, path)
-    im = Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode()))).convert('RGBA').resize((s, s), Image.LANCZOS)
+    w = round(s * 580 / 770)
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 770" width="%d" height="%d">'
+           '<g transform="translate(0,770) scale(0.125,-0.125)"><path d="%s" fill="#C8281C" stroke="#C8281C" stroke-width="40"/></g></svg>') % (w * 2, s * 2, path)
+    im = Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode()))).convert('RGBA').resize((w, s), Image.LANCZOS)
     base.paste(im, (x, y), im)
 
 
@@ -100,7 +100,7 @@ def make(title, zh, img_path, out, home=False):
         art.thumbnail((box_w, box_h))
         x, y = 1200 - 70 - art.width, (H - art.height) // 2
         shadowed(base, art, (x, y))
-    seal(base, 70, 64, 56)
+    seal(base, 70, 50, 76)
     d = ImageDraw.Draw(base)
     d.text((140, 92), 'YINGHAN ZHANG', font=ImageFont.truetype(MONO, 20), fill=INK, anchor='lm')
     if home:
