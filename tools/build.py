@@ -245,15 +245,12 @@ def home_page():
   <div class="hero-top">
   <p class="hero-kicker mono"><span>{bi(SITE['tagline'], SITE['tagline_zh'])}</span></p>
   <div class="hero-hint mono">
-    <span>{bi('Rub the paper to reveal the stone.', '轻拂纸面,拓出石形。')}</span>
-    <span class="dim"><span class="hero-pct" data-pct>0</span>% {bi('revealed', '已显现')}</span>
     <button type="button" data-reveal-all>{bi('Reveal all', '全部显现')}</button>
   </div>
   </div>
   <div class="hero-stage" id="stage">
     <img class="hero-stone" src="assets/img/ui/stone-1500.webp" srcset="assets/img/ui/stone-760.webp 760w, assets/img/ui/stone-1500.webp 1500w" sizes="(max-width:900px) 70vw, 36vw" width="1001" height="1500" alt="A full-shape rubbing of a scholar’s stone" data-alt-en="A full-shape rubbing of a scholar’s stone" data-alt-zh="一块文人石的全形拓" fetchpriority="high" draggable="false">
     <canvas id="rub" data-mask="assets/img/ui/stone-mask.png" aria-hidden="true"></canvas>
-    <span class="hero-done mono">{bi('The stone, revealed.', '石形已现。')}</span>
   </div>
   {seal_svg('', 'hero-seal')}
   <div class="hero-foot">
