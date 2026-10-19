@@ -453,7 +453,7 @@ def work_page(idx):
 </figure>''')
         process_html = f'''<section class="process" id="process" aria-labelledby="process-h">
   <div class="process-head">
-    <h2 class="sec-title rv" id="process-h"><small class="mono">{bi('Behind the scene', '幕后')} — {len(proc)} {bi('frames', '帧')}</small>{bi('How the <em>ink</em> arrives', '墨,<em>如何到来</em>', raw=True)}</h2>
+    <h2 class="sec-title rv" id="process-h"><small class="mono">{bi('Behind the scene', '幕后')} — {len(proc)} {bi('frames', '帧')}</small></h2>
     <p class="rv" style="--d:.12s">{bi('Click a frame to look closer.', '点击任一画面可细看。')}</p>
   </div>
   <div class="board">
