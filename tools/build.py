@@ -17,6 +17,8 @@ import shutil
 from datetime import date
 from pathlib import Path
 
+import make_veins
+
 ROOT = Path(__file__).resolve().parent.parent
 D = json.loads((ROOT / 'data/works.json').read_text(encoding='utf-8'))
 IM = json.loads((ROOT / 'data/images.json').read_text(encoding='utf-8'))
@@ -227,7 +229,7 @@ def lang_script_tail(rel):
 def page(rel, *, title_en, title_zh, desc, path, og, body, current=None, is_home=False, ld=None, extra_body=''):
     return '\n'.join([
         head(rel, title_en, title_zh, desc, path, og, is_home, ld, ASSET_V),
-        '<body>', chrome(rel, current), extra_body, '<main id="main">', body, '</main>', footer(rel),
+        '<body>', '<div class="veins" aria-hidden="true" style="background-image:url(%sassets/img/veins/%s.webp)"></div>' % (rel, VEIN_KEYS.setdefault(path, make_veins.key_for(path))), chrome(rel, current), extra_body, '<main id="main">', body, '</main>', footer(rel),
         lang_script_tail(rel), '</body>', '</html>', ''])
 
 
@@ -622,6 +624,7 @@ def write(path, text):
 
 
 ASSET_V = ''
+VEIN_KEYS = {}   # page path -> background-veins image key (see make_veins.py)
 
 
 def main():
@@ -644,6 +647,9 @@ def main():
     write('robots.txt', 'User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' % DOMAIN)
     write('CNAME', DOMAIN.replace('https://', '').replace('http://', '') + '\n')
     write('.nojekyll', '')
+    made = make_veins.build(sorted(set(VEIN_KEYS.values())))
+    if made:
+        print('veins: %d background(s) composed' % made)
     print('built %d pages, css/js %s' % (3 + N + 2, ASSET_V))
 
 

@@ -36,6 +36,8 @@ html[data-theme="ink"] .hero-name-ink{filter:invert(1)}
 .hero-stone{mix-blend-mode:multiply}
 html[data-theme="ink"] .hero-stone{filter:invert(1) contrast(1.05);mix-blend-mode:screen}
 #rub{max-width:none;position:absolute;left:-12%;top:-5%;width:124%;height:110%;touch-action:none;cursor:crosshair;z-index:2}
+/* soft edges so the covering sheet melts into the veined paper behind it */
+#rub{--fx:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);--fy:linear-gradient(180deg,transparent,#000 3.5%,#000 96.5%,transparent);-webkit-mask-image:var(--fx),var(--fy);-webkit-mask-composite:source-in;mask-image:var(--fx),var(--fy);mask-composite:intersect}
 .hero-seal{
   position:absolute;right:calc(var(--gut) + 10px);top:calc(var(--head-h) + 9svh);z-index:4;
   width:60px;height:80px;--seal-stroke:36;transform:rotate(-3deg);
