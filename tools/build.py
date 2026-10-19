@@ -323,8 +323,7 @@ def home_page():
         i = info(p['src'])
         frames.append(f'''<figure class="frame">
   <span class="no mono">{num(k)}</span>
-  <a href="{work_href(rel, sv)}#process" aria-label="{a(p['caption'])}">{ph(i, rel, p['alt'], p['alt_zh'], '(max-width:900px) 33vw, 14vw')}</a>
-  <figcaption>{bi(p['caption'], p['caption_zh'])}</figcaption>
+  <a href="{work_href(rel, sv)}#process" aria-label="{a(p['caption'])}">{ph(i, rel, p['alt'], p['alt_zh'], '(max-width:900px) 50vw, 24vw')}</a>
 </figure>''')
     feature = f'''<section class="feature" id="process" aria-labelledby="process-h">
   <div class="feature-head">
@@ -453,7 +452,6 @@ def work_page(idx):
             frames.append(f'''<figure class="frame">
   <span class="no mono">{num(n)}</span>
   <button type="button" aria-label="{a(p['caption'])}" {lb_attrs(i, rel, p['caption'], p['caption_zh'])}>{ph(i, rel, p['alt'], p['alt_zh'], '(max-width:900px) 33vw, 15vw')}</button>
-  <figcaption>{bi(p['caption'], p['caption_zh'])}</figcaption>
 </figure>''')
         process_html = f'''<section class="process" id="process" aria-labelledby="process-h">
   <div class="process-head">
@@ -461,7 +459,6 @@ def work_page(idx):
     <p class="rv" style="--d:.12s">{bi('Click a frame to look closer.', '点击任一画面可细看。')}</p>
   </div>
   <div class="board">
-    <nav class="board-index" aria-label="Frames"><h3>{bi('Frames', '画面')}</h3><ol>{''.join(items)}</ol></nav>
     <div class="frames" data-thread="">
 {chr(10).join(frames)}
     </div>
@@ -524,7 +521,7 @@ def about_page():
         aside_html += '<dt>%s</dt><dd><a href="mailto:%s">%s</a></dd>' % (bi('Email', '邮箱'), a(SITE['email']), esc(SITE['email']))
     body = f'''<section class="about">
   <header class="about-head">
-    <h1 class="sec-title rv"><small class="mono">{bi('Artist bio', '艺术家简介')}</small>{bi('About', '关于', raw=False)}</h1>
+    <h1 class="sec-title rv"><small class="mono">{bi('About', '关于')}</small>{bi('Artist bio', '艺术家简介', raw=False)}</h1>
     <p class="mono dim rv">{bi(SITE['tagline'], SITE['tagline_zh'])}</p>
   </header>
   <figure class="about-photo rv">
