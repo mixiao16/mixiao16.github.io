@@ -242,8 +242,14 @@ def home_page():
     rel = ''
     # --- hero
     hero = f'''<section class="hero" id="top" aria-label="Introduction">
+  <div class="hero-top">
   <p class="hero-kicker mono"><span>{bi(SITE['tagline'], SITE['tagline_zh'])}</span></p>
-  <h1 class="hero-name" aria-label="Zhang Yinghan 张樱瀚"><img class="hero-name-ink" src="assets/img/ui/name-ink-1600.webp" srcset="assets/img/ui/name-ink-900.webp 900w, assets/img/ui/name-ink-1600.webp 1600w" sizes="(max-width:900px) 92vw, 52vw" width="1669" height="810" alt="" fetchpriority="high" draggable="false"><span class="hero-name-en mono" aria-hidden="true">Zhang Yinghan</span></h1>
+  <div class="hero-hint mono">
+    <span>{bi('Rub the paper to reveal the stone.', '轻拂纸面,拓出石形。')}</span>
+    <span class="dim"><span class="hero-pct" data-pct>0</span>% {bi('revealed', '已显现')}</span>
+    <button type="button" data-reveal-all>{bi('Reveal all', '全部显现')}</button>
+  </div>
+  </div>
   <div class="hero-stage" id="stage">
     <img class="hero-stone" src="assets/img/ui/stone-1500.webp" srcset="assets/img/ui/stone-760.webp 760w, assets/img/ui/stone-1500.webp 1500w" sizes="(max-width:900px) 70vw, 36vw" width="1001" height="1500" alt="A full-shape rubbing of a scholar’s stone" data-alt-en="A full-shape rubbing of a scholar’s stone" data-alt-zh="一块文人石的全形拓" fetchpriority="high" draggable="false">
     <canvas id="rub" data-mask="assets/img/ui/stone-mask.png" aria-hidden="true"></canvas>
@@ -251,11 +257,7 @@ def home_page():
   </div>
   {seal_svg('', 'hero-seal')}
   <div class="hero-foot">
-    <div class="hero-hint mono">
-      <span>{bi('Rub the paper to reveal the stone.', '轻拂纸面,拓出石形。')}</span>
-      <span class="dim"><span class="hero-pct" data-pct>0</span>% {bi('revealed', '已显现')}</span>
-      <button type="button" data-reveal-all>{bi('Reveal all', '全部显现')}</button>
-    </div>
+  <h1 class="hero-name" aria-label="Zhang Yinghan 张樱瀚"><img class="hero-name-ink" src="assets/img/ui/name-ink-1600.webp" srcset="assets/img/ui/name-ink-900.webp 900w, assets/img/ui/name-ink-1600.webp 1600w" sizes="(max-width:900px) 92vw, 52vw" width="1693" height="819" alt="" fetchpriority="high" draggable="false"><span class="hero-name-en mono" aria-hidden="true">Zhang Yinghan</span></h1>
     <a class="scroll-cue mono" href="#works"><span>{bi('Scroll', '向下')}</span><i></i></a>
   </div>
 </section>'''
@@ -519,7 +521,6 @@ def about_page():
     aside = [
         ('Based in', '工作地', 'Seattle, WA', '美国 · 西雅图'),
         ('Practice', '媒介', 'Full-shape rubbing, printmaking, woodcut, drawing, collage', '全形拓、版画、木刻、绘画、拼贴'),
-        ('Studied', '师承', 'Full-shape rubbing, under a master artisan in Shandong', '山东,师从传统拓印匠人学习全形拓'),
     ]
     aside_html = ''.join('<dt>%s</dt><dd>%s</dd>' % (bi(e, z), bi(ev, zv)) for e, z, ev, zv in aside)
     aside_html += '<dt>%s</dt><dd><a href="%s" target="_blank" rel="noopener">%s ↗</a></dd>' % (bi('Instagram', 'Instagram'), a(ig), esc(handle))

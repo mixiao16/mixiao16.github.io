@@ -30,8 +30,9 @@
 
   /* hero */
   .hero{grid-template-rows:auto auto auto auto;min-height:100svh;padding-bottom:3svh}
-  .hero-kicker{grid-column:1/-1;grid-row:1;padding-left:0}
-  .hero-name{grid-column:1/-1;grid-row:2;align-self:start;width:100%;margin:calc(8svh + 26px) 0 0 -2%}
+  .hero-top{grid-column:1/-1;grid-row:1;padding-left:0;gap:1.2rem}
+  .hero-name{width:100%;margin:0 0 0 -2%}
+  .hero-foot .scroll-cue{display:none}
   .hero-name-en{font-size:clamp(9px,2.6vw,14px);letter-spacing:.45em;padding-left:.45em}
   .hero-stage{grid-column:1/-1;grid-row:3;height:min(54svh,520px);margin-top:-5svh}
   .hero-seal{top:calc(var(--head-h) + 11svh);width:45px;height:60px;--seal-stroke:50}
