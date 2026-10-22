@@ -566,7 +566,7 @@ def contact_page():
   </div>
   <figure class="contact-art rv" style="--d:.2s">
     <span class="ph" style="--ar:{ratio(i)};--c:{i['color']};background-image:url('{i['lqip']}')"><img src="{iurl(i, 480, rel)}" srcset="{srcset(i, rel)}" sizes="(max-width:900px) 70vw, 28vw" width="{i['w']}" height="{i['h']}" alt="{a(ex['alt'])}" data-alt-en="{a(ex['alt'])}" data-alt-zh="{a(ex['alt_zh'])}" loading="lazy" decoding="async"></span>
-    <figcaption class="mono">{bi('Printed sheets, repeated', '版画纸张,重复排列')}</figcaption>
+    <figcaption class="mono">{bi('Printed sheets', '版画纸张')}</figcaption>
   </figure>
 </section>'''
     return page(rel, title_en='Contact — Yinghan Zhang', title_zh='联系 — 张樱瀚',
