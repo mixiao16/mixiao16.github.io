@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 D = json.loads((ROOT / 'data/works.json').read_text(encoding='utf-8'))
 IM = json.loads((ROOT / 'data/images.json').read_text(encoding='utf-8'))
 SITE, WORKS, EX = D['site'], D['works'], D['extras']
+SAME_AS = [u for u in (SITE.get('instagram'), SITE.get('linkedin')) if u]
 DOMAIN = SITE['domain'].rstrip('/')
 YEAR = date.today().year
 TODAY = date.today().isoformat()
@@ -215,10 +216,13 @@ def footer(rel):
     mail = ''
     if SITE.get('email'):
         mail = '<a href="mailto:%s">%s</a>' % (a(SITE['email']), esc(SITE['email']))
+    li = ''
+    if SITE.get('linkedin'):
+        li = '<a href="%s" target="_blank" rel="noopener">LinkedIn ↗</a>' % a(SITE['linkedin'])
     return f'''<footer class="foot">
   <div class="foot-col mono"><span>{bi(SITE['tagline'], SITE['tagline_zh'])}</span></div>
   <div class="foot-col c mono"><a href="{home}#works">{bi('Work', '作品')}</a><a href="{rel}about/">{bi('About', '关于')}</a><a href="{rel}contact/">{bi('Contact', '联系')}</a></div>
-  <div class="foot-col r mono"><a href="{a(ig)}" target="_blank" rel="noopener">Instagram {esc(handle)} ↗</a>{mail}<span class="dim">© {YEAR} {bi(SITE['name'], SITE['name_zh'])}</span></div>
+  <div class="foot-col r mono"><a href="{a(ig)}" target="_blank" rel="noopener">Instagram {esc(handle)} ↗</a>{li}{mail}<span class="dim">© {YEAR} {bi(SITE['name'], SITE['name_zh'])}</span></div>
 </footer>'''
 
 
@@ -340,7 +344,7 @@ def home_page():
 </section>'''
 
     ld = {'@context': 'https://schema.org', '@type': 'Person', 'name': SITE['name'], 'alternateName': SITE['name_zh'],
-          'url': DOMAIN + '/', 'jobTitle': 'Stone artist and printmaker', 'sameAs': [SITE['instagram']],
+          'url': DOMAIN + '/', 'jobTitle': 'Stone artist and printmaker', 'sameAs': SAME_AS,
           }
     intro = f'<div class="intro" aria-hidden="true">{seal_svg('', 'intro-seal')}<div class="intro-name">{SITE["name"]}</div></div>'
     body = '\n'.join([hero, works, quote, feature])
@@ -516,6 +520,8 @@ def about_page():
     ]
     aside_html = ''.join('<dt>%s</dt><dd>%s</dd>' % (bi(e, z), bi(ev, zv)) for e, z, ev, zv in aside)
     aside_html += '<dt>%s</dt><dd><a href="%s" target="_blank" rel="noopener">%s ↗</a></dd>' % (bi('Instagram', 'Instagram'), a(ig), esc(handle))
+    if SITE.get('linkedin'):
+        aside_html += '<dt>LinkedIn</dt><dd><a href="%s" target="_blank" rel="noopener">%s ↗</a></dd>' % (a(SITE['linkedin']), esc(SITE['name']))
     if SITE.get('email'):
         aside_html += '<dt>%s</dt><dd><a href="mailto:%s">%s</a></dd>' % (bi('Email', '邮箱'), a(SITE['email']), esc(SITE['email']))
     body = f'''<section class="about">
@@ -534,7 +540,7 @@ def about_page():
   </div>
 </section>'''
     ld = {'@context': 'https://schema.org', '@type': 'Person', 'name': SITE['name'], 'alternateName': SITE['name_zh'],
-          'description': BIO_EN[0], 'url': DOMAIN + '/about/', 'sameAs': [SITE['instagram']]}
+          'description': BIO_EN[0], 'url': DOMAIN + '/about/', 'sameAs': SAME_AS}
     return page(rel, title_en='About — Yinghan Zhang', title_zh='关于 — 张樱瀚', desc=BIO_EN[0][:155].rstrip() + '…',
                 path='about/', og=og_for(), body=body, current='about', ld=ld)
 
@@ -551,6 +557,8 @@ def contact_page():
         rows.append('<a href="mailto:%s"><span class="mono">%s</span><span class="v">%s</span><span class="arr mono">↗</span></a>' % (
             a(SITE['email']), bi('Email', '邮箱'), esc(SITE['email'])))
     rows.append('<a href="%s" target="_blank" rel="noopener"><span class="mono">Instagram</span><span class="v">%s</span><span class="arr mono">↗</span></a>' % (a(ig), esc(handle)))
+    if SITE.get('linkedin'):
+        rows.append('<a href="%s" target="_blank" rel="noopener"><span class="mono">LinkedIn</span><span class="v">%s</span><span class="arr mono">↗</span></a>' % (a(SITE['linkedin']), esc(SITE['name'])))
     rows.append('<div><span class="mono">%s</span><span class="v">%s</span><span class="arr mono"></span></div>' % (bi('Based in', '工作地'), bi('Seattle, WA', '美国 · 西雅图')))
     rows.append('<div><span class="mono">%s</span><span class="v" data-clock>--:--</span><span class="arr mono"></span></div>' % bi('Local time', '当地时间'))
     note = ('For inquiries about works, exhibitions or collaborations, write by email or send a message on Instagram.'
