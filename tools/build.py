@@ -418,7 +418,7 @@ def work_page(idx):
         cap = im.get('caption'), im.get('caption_zh')
         lb_en, lb_zh = (cap[0] or w['title']), (cap[1] or w['title_zh'])
         figs.append(f'''<figure class="fig rv">
-  <div class="fig-frame" style="--ar:{ratio(i)};--c:{i['color']}" role="button" tabindex="0" aria-label="{a(w['title'])} {n}/{total}: open image" {lb_attrs(i, rel, lb_en, lb_zh)}>
+  <div class="fig-frame" style="--ar:{ratio(i)};--c:{i['color']}" role="button" tabindex="0" aria-label="{a(w['title'])} {n}/{total}: open image" {lb_attrs(i, rel, lb_en, lb_zh)}{'' if im.get('loupe', True) is False else ' data-loupe'}>
     {ph(i, rel, im['alt'], im['alt_zh'], '(max-width:900px) 94vw, 58vw', eager=n == 1)}
   </div>
   <figcaption class="mono"><b>{num(n)} / {num(total)}</b><span>{bi(cap[0], cap[1]) if cap[0] else ''}</span></figcaption>

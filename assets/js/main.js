@@ -565,7 +565,7 @@ const cursorLabel = (() => {
 /* ------------------------------------------------------------------ */
 (function loupe() {
   if (!fine) return;
-  const frames = $$('.fig-frame[data-big]');
+  const frames = $$('.fig-frame[data-loupe]');
   if (!frames.length) return;
   const lp = document.createElement('div');
   lp.className = 'loupe'; lp.innerHTML = '<span class="mono"></span>';

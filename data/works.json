@@ -22,31 +22,37 @@
           "src": "Silent Veins 静观/Zhang_Yinghan_09.jpg",
           "alt": "Installation view of Where Mountains Meet, a wall-scale collage of stone rubbings, with a small video monitor",
           "alt_zh": "装置现场:墙面上的大型拓印拼贴《群山交汇处》,一侧嵌有小型视频屏幕",
-          "role": "plate"
+          "role": "plate",
+          "loupe": false
         },
         {
           "src": "Silent Veins 静观/DSC_5212.jpg",
           "alt": "Where Mountains Meet on the walls, with the folding screen Gesture of Time standing in front",
           "alt_zh": "《群山交汇处》环绕墙面,前方立着折屏《时间的姿态》",
-          "role": "plate"
+          "role": "plate",
+          "loupe": false
         },
         {
           "src": "Silent Veins 静观/DSC_5211.jpg",
           "alt": "Gesture of Time, a four-panel folding screen, in front of Where Mountains Meet",
           "alt_zh": "四扇折屏《时间的姿态》,背后是《群山交汇处》",
-          "role": "plate"
+          "role": "plate",
+          "loupe": false
         },
         {
           "src": "Silent Veins 静观/Zhang_Yinghan_08.jpg",
           "alt": "Gesture of Time, detail of the folding screen",
           "alt_zh": "《时间的姿态》折屏局部",
-          "role": "plate"
+          "role": "plate",
+          "loupe": false
         },
         {
           "src": "Silent Veins 静观/Zhang_Yinghan_05.jpg",
           "alt": "A dark stone resting on an open, book-like form on a plinth",
           "alt_zh": "一块黑石置于基座上的“翻开的书”形装置之上",
-          "role": "plate"
+          "role": "plate",
+          "caption": "A book born of stone, living alongside stone. Hover over it to see the stone's detail through the loupe.",
+          "caption_zh": "一本由石头而生、与石头共生的书。可以用放大镜细看石头的纹理。"
         }
       ],
       "process": [
